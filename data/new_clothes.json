@@ -4,7 +4,7 @@
     "name": "BLUSA BON AMI",
     "description": "BLANCA LIBRETE DE FLORCITAS",
     "price": "25,300.00",
-    "image": "/images/clothes/product1.jpg",
+    "image": "./images/clothes/product1.jpg",
     "size": ["S"],
     "discount": "10%",
     "category": "new_clothes"
@@ -15,7 +15,7 @@
     "name": "BLUSA MINE NEGRA HALTER",
     "description": "DETALLE EN PECHO CALADO",
     "price": "13,700.00",
-    "image": "/images/clothes/product1.jpg",
+    "image": "./images/clothes/product1.jpg",
     "size": ["S"],
     "category": "new_clothes" 
   },
@@ -24,7 +24,7 @@
     "name": "BLUSA BLUE PEPPER IVORY",
     "description": "SATINADO FLORECITAS MANGA VUELITO CUELLO V",
     "price": "14,000.00",
-    "image": "/images/clothes/product1.jpg",
+    "image": "./images/clothes/product1.jpg",
     "size": ["S"],
     "category": "new_clothes" 
   },
@@ -33,7 +33,7 @@
     "name": "BLUSA I JOHA",
     "description": "GRIS TEJIDA TIRANTES DETALLES DORADOS",
     "price": "16,700.00",
-    "image": "/images/clothes/product1.jpg",
+    "image": "./images/clothes/product1.jpg",
     "size": ["S"],
     "category": "new_clothes" 
   },
@@ -42,7 +42,7 @@
     "name": "BLUSA MINE",
     "description": "TURQUESA SIN MANGAS ORILLA ONDAS PLIZADO AL FRENTE PECHO",
     "price": "15,300.00",
-    "image": "/images/clothes/product1.jpg",
+    "image": "./images/clothes/product1.jpg",
     "size": ["S"],
     "category": "new_clothes" 
   },
@@ -51,7 +51,7 @@
     "name": "BLUSA BLUE BLUSH",
     "description": "CORTA IVORY ENCAJE TIPO LAZO PECHO Y MANGAS ENCAJE PUNTITOS",
     "price": "16,900.00",
-    "image": "/images/clothes/product1.jpg",
+    "image": "./images/clothes/product1.jpg",
     "size": ["S"],
     "category": "new_clothes" 
   },
@@ -60,7 +60,7 @@
     "name": "CAMISERA MAGAZINE PLUS",
     "description": "MANGA 3/4 AZUL OSCURO BORDADO DE FLORES COLORES Y VERDES A",
     "price": "25,400.00",
-    "image": "/images/clothes/product1.jpg",
+    "image": "./images/clothes/product1.jpg",
     "size": ["S"],
     "category": "new_clothes" 
   },
@@ -69,7 +69,7 @@
     "name": "BLUSA WHITHEROOM",
     "description": "CACTUS GRIS LICRA TIRANTES GRUESOS.",
     "price": "14,500.00",
-    "image": "/images/clothes/product1.jpg",
+    "image": "./images/clothes/product1.jpg",
     "size": ["S"],
     "category": "new_clothes" 
   },
@@ -78,7 +78,7 @@
     "name": "LEGGINS LOVE TREE LILA",
     "description": "CON BOLSILLO AL LADO DEPORTIVA",
     "price": "17,500.00",
-    "image": "/images/clothes/product1.jpg",
+    "image": "./images/clothes/product1.jpg",
     "size": ["S"],
     "category": "new_clothes" 
   },
@@ -87,7 +87,7 @@
     "name": "JOGGER TIPO CARGO TIMING",
     "description": "CELESTE SATINADO",
     "price": "21,500.00",
-    "image": "/images/clothes/product1.jpg",
+    "image": "./images/clothes/product1.jpg",
     "size": ["S"],
     "category": "new_clothes" 
   },
@@ -96,7 +96,7 @@
     "name": "JOGGER TIPO CARGO TIMING",
     "description": "MAUVE SATINADO",
     "price": "21,500.00",
-    "image": "/images/clothes/product1.jpg",
+    "image": "./images/clothes/product1.jpg",
     "size": ["S"],
     "category": "new_clothes" 
   },
@@ -114,7 +114,7 @@
     "name": "VESTIDO CONTRO CORRENTE",
     "description": "COLOR VERDE CON MORADO TIRANTES ELASTICO ESPALDA LARGO",
     "price": "28,900.00",
-    "image": "/images/clothes/product1.jpg",
+    "image": "./images/clothes/product1.jpg",
     "size": ["S"],
     "category": "new_clothes" 
   },
@@ -123,7 +123,7 @@
     "name": "VESTIDO COZY",
     "description": "COLOR AZUL OPACO 3/4 FLORES IVORY Y MORADO TIRANTES AMARRAR ESPALDA",
     "price": "29,500.00",
-    "image": "/images/clothes/product1.jpg",
+    "image": "./images/clothes/product1.jpg",
     "size": ["S", "M", "L", "X"],
     "category": "new_clothes" 
   },
@@ -132,7 +132,7 @@
     "name": "BLUSA PEARCH PLUS",
     "description": "COLOR BEIGE MANGAS CALADAS CON BOTONES",
     "price": "16,900.00",
-    "image": "/images/clothes/product1.jpg",
+    "image": "./images/clothes/product1.jpg",
     "size": ["S", "M", "L", "X"],
     "category": "new_clothes" 
   },
@@ -141,7 +141,7 @@
     "name": "OGGER TIPO CARGO TIMING",
     "description": "CELESTE SATINADO",
     "price": "21,500.00",
-    "image": "/images/clothes/product1.jpg",
+    "image": "./images/clothes/product1.jpg",
     "size": ["S", "M", "L", "X"],
     "category": "new_clothes" 
   },
@@ -150,7 +150,7 @@
     "name": "OGGER TIPO CARGO TIMING",
     "description": "CELESTE SATINADO",
     "price": "21,500.00",
-    "image": "/images/clothes/product1.jpg",
+    "image": "./images/clothes/product1.jpg",
     "size": ["S", "M", "L", "X"],
     "category": "new_clothes" 
   },
@@ -159,7 +159,7 @@
     "name": "OGGER TIPO CARGO TIMING",
     "description": "CELESTE SATINADO",
     "price": "21,500.00",
-    "image": "/images/clothes/product1.jpg",
+    "image": "./images/clothes/product1.jpg",
     "size": ["S", "M", "L", "X"],
     "category": "new_clothes" 
   },
@@ -168,7 +168,7 @@
     "name": "OGGER TIPO CARGO TIMING",
     "description": "CELESTE SATINADO",
     "price": "21,500.00",
-    "image": "/images/clothes/product1.jpg",
+    "image": "./images/clothes/product1.jpg",
     "size": ["S", "M", "L", "X"],
     "category": "new_clothes" 
   }
