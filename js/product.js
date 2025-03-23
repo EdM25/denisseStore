@@ -9,7 +9,7 @@ document.addEventListener("DOMContentLoaded", async () => {
     }
 
     try {
-        const response = await fetch(`./data/${category}.json`);
+        const response = await fetch(`../data/${category}.json`);
         if (!response.ok) throw new Error(`Failed to fetch ${category}.json (status: ${response.status})`);
 
         const products = await response.json();
