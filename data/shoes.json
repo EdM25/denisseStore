@@ -1,0 +1,16 @@
+[
+    {
+        "id": "3",
+        "name": "Tenis Nike",
+        "description": "NIKE",
+        "price": "20000",
+        "image": "/images/clothes/product1.jpg"
+    },
+    {
+        "id": "4",
+        "name": "Sexual",
+        "description": "Sexual.",
+        "price": "$20",
+        "image": "/images/clothes/product1.jpg"
+    }
+]
