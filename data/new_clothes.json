@@ -6,7 +6,7 @@
     "price": "25,300.00",
     "image": "../images/clothes/product1.jpg",
     "size": ["S"],
-    "discount": "10%",
+    "discount": "",
     "category": "new_clothes"
     
   },
@@ -137,37 +137,163 @@
     "category": "new_clothes" 
   },
   {
-    "id": 1,
-    "name": "OGGER TIPO CARGO TIMING",
-    "description": "CELESTE SATINADO",
-    "price": "21,500.00",
+    "id": 133225,
+    "name": "BLUSA WHITEROOM+CACTUS",
+    "description": "COLOR GRIS TIPO ABRIGO MANGA LARGA CUELLO V",
+    "price": "20,900.00",
+    "image": "../images/clothes/product1.jpg",
+    "size": ["S"],
+    "category": "new_clothes" 
+  },
+  {
+    "id": 135047,
+    "name": "BLUSA HEAR AND HIPS",
+    "description": "COLOR VERDE SAGE M-LARGA CUELLO REDONDO",
+    "price": "9,200.00",
     "image": "../images/clothes/product1.jpg",
     "size": ["S", "M", "L", "X"],
     "category": "new_clothes" 
   },
   {
-    "id": 1,
-    "name": "OGGER TIPO CARGO TIMING",
-    "description": "CELESTE SATINADO",
-    "price": "21,500.00",
-    "image": "./images/clothes/product1.jpg",
-    "size": ["S", "M", "L", "X"],
-    "category": "new_clothes" 
-  },
-  {
-    "id": 1,
-    "name": "OGGER TIPO CARGO TIMING",
-    "description": "CELESTE SATINADO",
-    "price": "21,500.00",
+    "id": 135055,
+    "name": "BLUSA HEAR AND HIPS",
+    "description": "COLOR GRIS M-CORTA CON RAYITAS BLANCAS",
+    "price": "8,600.00",
     "image": "../images/clothes/product1.jpg",
     "size": ["S", "M", "L", "X"],
     "category": "new_clothes" 
   },
   {
-    "id": 1,
-    "name": "OGGER TIPO CARGO TIMING",
+    "id": 135067,
+    "name": "BLUSA HEAR AND HIPS",
     "description": "CELESTE SATINADO",
-    "price": "21,500.00",
+    "price": "10,300.00",
+    "image": "../images/clothes/product1.jpg",
+    "size": ["S", "M", "L", "X"],
+    "category": "new_clothes" 
+  },
+  {
+    "id": 135160,
+    "name": "BLUSA ACTIVE",
+    "description": "COLOR BEIGE MANGA CORTA CUELLO REDONDO",
+    "price": "9,600.00",
+    "image": "../images/clothes/product1.jpg",
+    "size": ["S", "M", "L", "X"],
+    "category": "new_clothes" 
+  },
+  {
+    "id": 135217,
+    "name": "ABRIGO CIELO KHAKI/IVORY",
+    "description": "BORDE CON ONDASCUELLO Y MANGA",
+    "price": "24,500.00",
+    "image": "../images/clothes/product1.jpg",
+    "size": ["S", "M", "L", "X"],
+    "category": "new_clothes" 
+  },
+  {
+    "id": 136075,
+    "name": "JACKET HYFVE",
+    "description": "CUERINA CELESTE Y BEIGE RETRO",
+    "price": "26,900.00",
+    "image": "../images/clothes/product1.jpg",
+    "size": ["S", "M", "L", "X"],
+    "category": "new_clothes" 
+  },
+  {
+    "id": 137146,
+    "name": "PANTALON LARGO WHITEROOM CACTUS",
+    "description": "COLOR AZUL DEPORTIVO CON ELASTICO EN EL TOBILLO ",
+    "price": "16,900.00",
+    "image": "../images/clothes/product1.jpg",
+    "size": ["S", "M", "L", "X"],
+    "category": "new_clothes" 
+  },
+  {
+    "id": 137561,
+    "name": "CROP TOP WHITEROOM CACTUS",
+    "description": "BEIGE CUELLO REDONDO TIRANTES GRUESOS",
+    "price": "12,900.00",
+    "image": "../images/clothes/product1.jpg",
+    "size": ["S", "M", "L", "X"],
+    "category": "new_clothes" 
+  },
+  {
+    "id": 139032,
+    "name": "BLUSA HEART & HIPS",
+    "description": "COLOR BLANCO M-CORTA CUELLO CUADRADO BASICA",
+    "price": "9,900.00",
+    "image": "../images/clothes/product1.jpg",
+    "size": ["S", "M", "L", "X"],
+    "category": "new_clothes" 
+  },
+  {
+    "id": 142063,
+    "name": "BLUSA DNA PLUS ARENA",
+    "description": "M-CORTA CUELLO V CON 3 BOTONES M-3/4 CON BOTON",
+    "price": "16,200.00",
+    "image": "../images/clothes/product1.jpg",
+    "size": ["S", "M", "L", "X"],
+    "category": "new_clothes" 
+  },
+  {
+    "id": 138269,
+    "name": "VESTIDO JESSY B",
+    "description": " MOSTAZA CORTO TELA RAYITAS TIRANTES CON VUELOS",
+    "price": "24,900.00",
+    "image": "../images/clothes/product1.jpg",
+    "size": ["S", "M", "L", "X"],
+    "category": "new_clothes" 
+  },
+  {
+    "id": 138421,
+    "name": "SHORT WHITE ROOM SAGE",
+    "description": "E PRETINA ELASTICO ABERTURAS DE LADO",
+    "price": "14,900.00",
+    "image": "../images/clothes/product1.jpg",
+    "size": ["S", "M", "L", "X"],
+    "category": "new_clothes" 
+  },
+  {
+    "id": 138686,
+    "name": "PALAZZO JESSY B",
+    "description": "CELESTE/LILA SATINADO ESTAM CELULAS Y CUADROS AMARRAR CINTURA",
+    "price": "18,900.00",
+    "image": "../images/clothes/product1.jpg",
+    "size": ["S", "M", "L", "X"],
+    "category": "new_clothes" 
+  },
+  {
+    "id": 143091,
+    "name": "PANTALON IRIS KHAK",
+    "description": "TIPO CARGO ELASTICO EN CINTURA",
+    "price": "15,900.00",
+    "image": "../images/clothes/product1.jpg",
+    "size": ["S", "M", "L", "X"],
+    "category": "new_clothes" 
+  },
+  {
+    "id": 139111,
+    "name": "PALAZZO WHITEROOM SAGE ESTAM",
+    "description": "M FLORCITAS BLANCAS CRUZADO VUELOS AMARRAR CINTURA",
+    "price": "23,900.00",
+    "image": "../images/clothes/product1.jpg",
+    "size": ["S", "M", "L", "X"],
+    "category": "new_clothes" 
+  },
+  {
+    "id": 139198,
+    "name": "SHORT JESSY B",
+    "description": "COLOR B BLANCO HOJAS KAKHI AMARRAR FRENTE ELASTICO CINTURA",
+    "price": "16,900.00",
+    "image": "../images/clothes/product1.jpg",
+    "size": ["S", "M", "L", "X"],
+    "category": "new_clothes" 
+  },
+  {
+    "id": 144003,
+    "name": "PANTALON ACTIVE",
+    "description": "E BEIGE CARGO ELASTICO EN CINTURA",
+    "price": "19,500.00",
     "image": "../images/clothes/product1.jpg",
     "size": ["S", "M", "L", "X"],
     "category": "new_clothes" 
