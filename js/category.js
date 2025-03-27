@@ -49,8 +49,8 @@ document.addEventListener("DOMContentLoaded", async () => {
             const formattedDiscountedPrice = formatPrice(discountedPrice);
 
             // Limitar la descripción a 80 caracteres
-            const description = product.description.length > 80
-                ? product.description.substring(0, 80) + "..."
+            const description = product.description.length > 30
+                ? product.description.substring(0, 30) + "..."
                 : product.description;
 
             // Crear la etiqueta de descuento si aplica
@@ -63,7 +63,7 @@ document.addEventListener("DOMContentLoaded", async () => {
             productCard.innerHTML = `
                 ${discountBadge}
                 <div class="w-full overflow-hidden rounded-xl">
-                    <img src="${product.image}" alt="${product.name}" class="w-full h-60 object-cover">
+                    <img src="${product.image}" alt="${product.name}" class="w-full sm:h-48 md:h-60 object-cover">
                 </div>
                 <h2 class="text-lg font-semibold mt-3 text-center text-gray-800">${product.name}</h2>
                 <p class="text-sm text-gray-600 mt-2 text-center">${description}</p>
@@ -75,7 +75,7 @@ document.addEventListener("DOMContentLoaded", async () => {
                 </div>
                 <a href="product.html?id=${product.id}&category=${currentPage}" 
                 class="bg-gradient-to-r from-indigo-500 to-purple-600 text-white px-5 py-2 rounded-lg mt-4 w-full text-center 
-                hover:from-indigo-600 hover:to-purple-700 transition-all duration-300 transform hover:scale-105">
+                hover:from-indigo-600 hover:to-purple-700 uppercase transition-all duration-300 transform hover:scale-105 text-sm sm:text-base">
                     Ver Producto
                 </a>
             `;
