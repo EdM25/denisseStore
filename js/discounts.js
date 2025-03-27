@@ -2,7 +2,7 @@ document.addEventListener("DOMContentLoaded", async () => {
     const ofertasContainer = document.getElementById("ofertas-container");
 
     try {
-        const response = await fetch("../data/discounts.json");
+        const response = await fetch("./data/discounts.json");
         if (!response.ok) throw new Error(`Error al cargar JSON (status: ${response.status})`);
         
         const productos = await response.json();
