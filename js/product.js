@@ -23,8 +23,7 @@ document.addEventListener("DOMContentLoaded", async () => {
         // Generar el select de tallas dinámicamente
         const sizeOptions = product.size.map(size => `<option value="${size}">${size}</option>`).join("");
 
-
-        // Mostrar descuento y precios
+// Mostrar descuento y precios
         const discount = product.discount ? parseFloat(product.discount.replace('%', '')) / 100 : 0;
         const originalPrice = parseFloat(product.price.replace('₡', '').replace(',', ''));
         const discountedPrice = discount ? (originalPrice * (1 - discount)) : originalPrice;
@@ -50,7 +49,7 @@ document.addEventListener("DOMContentLoaded", async () => {
                 <p class="text-3xl font-bold text-green-600">
                     ${
                         product.discount ? 
-                        `<span class="line-through text-gray-500">₡${originalPrice.toLocaleString()}</span> ₡${discountedPriceFormatted}`
+                        `<span class="line-through text-gray-500">₡${originalPrice.toLocaleString()}</span> ₡${discountedPriceFormatted}` 
                         : `₡${originalPrice.toLocaleString()}`
                     }
                 </p>
@@ -68,6 +67,19 @@ document.addEventListener("DOMContentLoaded", async () => {
                     <option value="fuera">Fuera del GAM (+₡4,000)</option>
                 </select>
 
+                <!-- Botón de añadir al carrito -->
+                <button id="add-to-cart" class="bg-gradient-to-r from-indigo-500 to-purple-600 text-white px-6 py-3 rounded-lg w-full hover:bg-[#e65c00] transition-colors mt-6">
+                    Añadir al carrito
+                </button>
+
+                <!-- Mensaje de éxito al agregar al carrito -->
+                <div id="cart-message" class="hidden text-center text-white bg-green-600 p-4 rounded-lg mt-4">
+                    Producto añadido al carrito
+                </div>
+
+                <!-- Desicion -->
+                <p class="text-center">Adquiere este único artículo</p>
+
                 <!-- Botón de compra -->
                 <button id="buy-btn" class="bg-gradient-to-r from-indigo-500 to-purple-600 text-white px-6 py-3 rounded-lg w-full hover:bg-[#e65c00] transition-colors mt-6">
                     Comprar por WhatsApp
@@ -76,25 +88,56 @@ document.addEventListener("DOMContentLoaded", async () => {
         </div>
     `;
 
+    // Función para el botón de añadir al carrito
+    document.getElementById("add-to-cart").addEventListener("click", () => {
+        const size = document.getElementById("size").value;
+        const shippingOption = document.getElementById("shipping").value;
+        const basePrice = product.discount ? discountedPrice : originalPrice;
+        const shippingPrice = shippingOption === "gam" ? 2000 : 4000;
+        const totalPrice = basePrice + shippingPrice;
+
+        const cartItem = {
+            id: product.id,
+            name: product.name,
+            price: totalPrice,
+            size: size,
+            image: product.image
+        };
+
+        // Obtener carrito desde localStorage o inicializarlo vacío
+        let cart = JSON.parse(localStorage.getItem("cart")) || [];
+        cart.push(cartItem);
+        localStorage.setItem("cart", JSON.stringify(cart));
+
+        // Mostrar el mensaje de "Producto añadido al carrito"
+        const cartMessage = document.getElementById("cart-message");
+        cartMessage.classList.remove("hidden");
+        
+        // Ocultar el mensaje después de 3 segundos
+        setTimeout(() => {
+            cartMessage.classList.add("hidden");
+        }, 3000);
+
+        // Actualizar el contador del carrito (puedes definir la función updateCartCount que ya tienes)
+        updateCartCount();
+    });
+
     // Función para el botón de compra
     document.getElementById("buy-btn").addEventListener("click", () => {
         const whatsappNumber = "+50672996379";
         const productUrl = window.location.href;
         const shippingOption = document.getElementById("shipping").value;
         const selectSize = document.getElementById("size").value;
-        const basePrice = product.discount ? discountedPrice : originalPrice; // Usar el precio con descuento si aplica
+        const basePrice = product.discount ? discountedPrice : originalPrice;
         const shippingPrice = shippingOption === "gam" ? 2000 : 4000;
         const totalPrice = basePrice + shippingPrice;
 
-        // Mapeo de opciones de envío
         const shippingText = shippingOption === "gam" ? "Dentro del GAM (+₡2,000)" : "Fuera del GAM (+₡4,000)";
         const discountText = product.discount ? `Descuento: ${product.discount}` : "";
 
-        // Corregido: Mostrar el precio con descuento o el precio original correctamente
         const priceToShow = product.discount ? `₡${discountedPriceFormatted}` : `₡${originalPrice.toLocaleString()}`;
-        const totalPriceFormatted = totalPrice.toLocaleString(); // Formatear el total
+        const totalPriceFormatted = totalPrice.toLocaleString();
 
-        // Mensaje de WhatsApp con el precio correcto
         const message = `Hola, estoy interesado(a) en comprar: ${product.image}\n*${product.name}*.\n👕*Talla:* ${selectSize}\n💲*Precio:* ${priceToShow}\n📦*Envío:* ${shippingText}\n💲 *Precio Total:* ₡${totalPriceFormatted}\n${discountText ? `💲 *Descuento:* ${product.discount}` : ''}\n\n🔗 *Link:* ${productUrl}\n\n¿Está disponible?`;
 
         const whatsappUrl = `https://wa.me/${whatsappNumber}?text=${encodeURIComponent(message)}`;
@@ -114,28 +157,39 @@ function loadRelatedProducts(products, currentProductId) {
     const relatedProductsContainer = document.getElementById("related-products");
     relatedProductsContainer.innerHTML = "";
 
-    // Obtener productos relacionados aleatoriamente (excluyendo el producto actual)
     const relatedProducts = products.filter(p => p.id !== currentProductId);
-    const shuffledRelatedProducts = relatedProducts.sort(() => 0.5 - Math.random()).slice(0, 4); // 4 productos aleatorios
+    const shuffledRelatedProducts = relatedProducts.sort(() => 0.5 - Math.random()).slice(0, 4); 
 
     shuffledRelatedProducts.forEach(product => {
         const productCard = document.createElement("div");
         productCard.classList.add("bg-white", "border", "rounded-lg", "p-6", "shadow-lg", "transition-transform", "duration-300", "hover:scale-105");
 
-        // Asegúrate de que 'category' esté definido. Si no, usa 'default'
-        const category = product.category || 'default';  // Si no tiene categoría, se usa 'default'
+        const category = product.category || 'default';
+        
+        // Limitar la longitud de la descripción a 100 caracteres
+        const truncatedDescription = product.description.length > 40 ? product.description.slice(0, 40) + '...' : product.description;
 
         productCard.innerHTML = `
             <img src="${product.image}" alt="${product.name}" class="w-full h-48 object-cover rounded-lg">
-            <h2 class="text-xl font-semibold mt-4 text-gray-800">${product.name}</h2>
-            <p class="text-sm text-gray-600 mt-2">${product.description}</p>
+            <h4 class="font-semibold mt-4 text-gray-800">${product.name}</h4>
+            <p class="text-sm text-gray-600 mt-2">${truncatedDescription}</p>
             <p class="text-lg text-green-600 font-bold mt-2">${product.price}</p>
-            <a href="product.html?id=${product.id}&category=${category}"
-               class="bg-gradient-to-r from-indigo-500 to-purple-600 text-white px-4 py-2 rounded-lg block text-center mt-4 hover:bg-[#e65c00] transition-colors">
-               Ver Producto
-            </a>
+
+            <!-- Contenedor para el botón -->
+            <div class="mt-4">
+                <a href="product.html?id=${product.id}&category=${category}"
+                   class="product-button bg-gradient-to-r from-indigo-500 to-purple-600 text-white px-6 py-3 rounded-lg block text-center hover:bg-[#e65c00] transition-colors">
+                   Ver Producto
+                </a>
+            </div>
         `;
 
         relatedProductsContainer.appendChild(productCard);
     });
+}
+
+function updateCartCount() {
+    const cartCount = document.getElementById("cart-count");
+    const cart = JSON.parse(localStorage.getItem("cart")) || [];
+    cartCount.textContent = cart.length;
 }

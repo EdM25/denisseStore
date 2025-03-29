@@ -1,231 +1,362 @@
 <!DOCTYPE html>
 <html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tienda Denisse</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"
+    />
+  </head>
 
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Tienda Denisse</title>
-  <script src="https://cdn.tailwindcss.com"></script>
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
-  <link rel="stylesheet" href="styles.css" />
-</head>
+  <body
+    class="bg-[#e3e6e6] opacity-0 transform translate-y-10 transition-all duration-700 flex flex-col min-h-screen"
+  >
+  <nav class="bg-white shadow-md fixed w-full z-50">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="flex justify-between items-center py-4">
+      <a href="./index.html">
+        <img
+          src="./images/minimalisticandattractivehorizontallogoforTiendaDenisse.Thedesignshouldbesleekprofessionalandsuitableforawebsitenavb-ezgif.png"
+          alt="Logo Tienda Denisse"
+          class="h-12 md:h-14 lg:h-16 w-auto"
+        />
+      </a>
 
-<body class="bg-[#e3e6e6] opacity-0 transform translate-y-10 transition-all duration-700 flex flex-col min-h-screen">
-  <div class="h-20">
-    <nav class="bg-white shadow-md fixed w-full z-50">
-      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div class="flex justify-between items-center py-4">
-          <a href="./index.html">
-            <img
-              src="./images/minimalisticandattractivehorizontallogoforTiendaDenisse.Thedesignshouldbesleekprofessionalandsuitableforawebsitenavb-ezgif.png"
-              alt="Logo Tienda Denisse" class="h-12 md:h-14 lg:h-16 w-auto">
-
-          </a>
-
-          <button id="menu-toggle" class="md:hidden text-gray-700">☰</button>
-          <div id="menu"
-            class="hidden md:flex md:flex-row md:gap-x-4 absolute md:relative bg-white w-full md:w-auto top-full md:top-0 left-0 shadow-lg md:shadow-none z-50 transition-all duration-300 ease-in-out">
-            <div class="relative group">
-              <button class="text-gray-700 hover:text-blue-600 font-semibold">
-                Productos
-              </button>
-              <div
-                class="absolute left-0 mt-2 w-48 bg-white shadow-lg rounded-md opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all">
-                <a href="./template/new_clothes.html" class="block px-4 py-2 hover:bg-gray-100">Ropa</a>
-                <a href="#" class="block px-4 py-2 hover:bg-gray-100">Cosmeticos</a>
-                <a href="#" class="block px-4 py-2 hover:bg-gray-100">Zapatos</a>
-                <a href="#" class="block px-4 py-2 hover:bg-gray-100">Liberia</a>
-                <a href="#" class="block px-4 py-2 hover:bg-gray-100">Tecnología</a>
-                <a href="#" class="block px-4 py-2 hover:bg-gray-100">Articulos para el Hogar</a>
-                <a href="#" class="block px-4 py-2 hover:bg-gray-100">Juguetes</a>
-              </div>
+      <!-- Carrito y Menú en versión de escritorio -->
+      <div class="flex items-center space-x-4 md:space-x-8">
+        <!-- Menú en versión de escritorio -->
+        <div id="menu" class="hidden md:flex md:flex-row md:gap-x-4">
+          <div class="relative group">
+            <button class="text-gray-700 hover:text-blue-600 font-semibold flex items-center space-x-1">
+              <span>Productos</span>
+              <svg
+                class="w-4 h-4 transform group-hover:rotate-180 transition-transform duration-200"
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 20 20"
+                fill="currentColor"
+                aria-hidden="true"
+              >
+                <path fill-rule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clip-rule="evenodd" />
+              </svg>
+            </button>
+            <div class="absolute left-0 mt-2 w-48 bg-white shadow-lg rounded-md opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 ease-in-out">
+              <a href="./template/new_clothes.html" class="block px-4 py-2 hover:bg-gray-100">Ropa</a>
+              <a href="./template/make_up.html" class="block px-4 py-2 hover:bg-gray-100">Cosmeticos</a>
+              <a href="./template/shoes.html" class="block px-4 py-2 hover:bg-gray-100">Zapatos</a>
+              <a href="./template/bookshop.html" class="block px-4 py-2 hover:bg-gray-100">Libreria</a>
+              <a href="" class="block px-4 py-2 hover:bg-gray-100">Tecnología</a>
+              <a href="./template/home.html" class="block px-4 py-2 hover:bg-gray-100">Articulos para el Hogar</a>
+              <a href="./template/toys.html" class="block px-4 py-2 hover:bg-gray-100">Juguetes</a>
             </div>
-            <a href="#" class="text-gray-700 hover:text-blue-600 font-semibold">Sobre Nosotros</a>
-            <a href="#" class="text-gray-700 hover:text-blue-600 font-semibold">Contacto</a>
-            <a href="#" class="text-gray-700 hover:text-blue-600 font-semibold">Tienda</a>
           </div>
+          <a href="#" class="text-gray-700 hover:text-blue-600 font-semibold">Sobre Nosotros</a>
+          <a href="#" class="text-gray-700 hover:text-blue-600 font-semibold">Contacto</a>
+          <a href="#" class="text-gray-700 hover:text-blue-600 font-semibold">Tienda</a>
+        </div>
+
+        <!-- Carrito en versión de escritorio (a la derecha) -->
+        <div class="flex items-center ml-auto">
+          <button id="cart-toggle" class="relative">
+            <img src="./images/596f0d8cb733b17268752d044976f102-shopping-bag-icon.webp" alt="Carrito" class="h-7 w-7" />
+            <span id="cart-count" class="absolute top-0 right-0 text-xs bg-red-500 text-white rounded-full px-1 py-1 text-[0.4rem] hidden">0</span>
+          </button>
         </div>
       </div>
-    </nav>
+
+      <!-- Menú en dispositivos móviles -->
+      <button
+        id="menu-toggle"
+        class="md:hidden text-gray-700 hover:text-blue-600 focus:outline-none"
+      >
+        <span class="block w-6 h-0.5 bg-gray-700 mb-1"></span>
+        <span class="block w-6 h-0.5 bg-gray-700 mb-1"></span>
+        <span class="block w-6 h-0.5 bg-gray-700"></span>
+      </button>
+    </div>
   </div>
+</nav>
 
-
-  <main class="flex-1">
-
-    <!--Carousel-->
-
-    <div class="relative w-full h-[500px] overflow-hidden">
-      <div class="swiper mySwiper h-full">
-        <div class="swiper-wrapper">
-          <div class="swiper-slide relative">
-            <img
-              src="./images/carousel/Amodernandabstractbackgroundwithfreshcolorslikegreenandgray.Thedesignfeaturessmoothgradientssoftwavesandsubtlegeometricpattern.svg"
-              class="w-full h-full object-cover" />
-            <div
-              class="absolute inset-0 bg-black/50 flex flex-col items-center justify-center text-white text-center px-4">
-              <h2 class="text-3xl md:text-5xl font-bold">
-                Encuentra en Tienda Denisse lo que estás buscando
-              </h2>
-              <h3 class="text-lg md:text-2xl mt-2">A precios accesibles</h3>
-              <a href="#"
-                class="mt-4 px-8 py-3 bg-gradient-to-r from-emerald-500 to-cyan-500 hover:from-emerald-600 hover:to-cyan-600 text-white font-semibold text-lg rounded-lg shadow-lg transform transition-all duration-300 hover:scale-105 hover:shadow-xl">
-                Ver productos
-              </a>
-            </div>
-          </div>
-        </div>
-        <div class="swiper-button-next text-white"></div>
-        <div class="swiper-button-prev text-white"></div>
-      </div>
-    </div>
-
-    <h2 class="text-3xl font-bold text-center mt-10">Categorías para explorar</h2>
-
-    <!-- CONTENEDOR PRINCIPAL -->
-
-    <div class="grid grid-cols-1 md:grid-cols-2 gap-6 max-w-7xl mx-auto mt-8 px-4">
-
-
-
-      <!-- BLOQUE 1 -->
-      <div class="grid grid-cols-2 gap-4">
-        <!-- Categoría: Ropa -->
-        <a href="./template/new_clothes.html"
-          class="relative overflow-hidden rounded-lg shadow-md bg-white p-2 hover:scale-105 transition-transform">
-          <img src="./images/categories-images/clothes.jpeg" alt="Ropa" class="w-full h-36 object-cover rounded-md">
-          <div class="text-center mt-2">
-            <h3 class="text-sm font-bold text-gray-800">Ropa</h3>
-          </div>
-        </a>
-
-        <!-- Categoría: Salud y Belleza -->
-        <a href="#"
-          class="relative overflow-hidden rounded-lg shadow-md bg-white p-2 hover:scale-105 transition-transform">
-          <img src="./images/categories-images/img_974727adf1173e63fae494872002c569.jpg" alt="Salud y Belleza"
-            class="w-full h-36 object-cover rounded-md">
-          <div class="text-center mt-2">
-            <h3 class="text-sm font-bold text-gray-800">Cosmeticos</h3>
-          </div>
-        </a>
-
-        <!-- Categoría: Zapatos -->
-        <a href="#"
-          class="relative overflow-hidden rounded-lg shadow-md bg-white p-2 hover:scale-105 transition-transform">
-          <img src="./images/categories-images/82bbaa48-0232-49e6-b443-ad15de9ee7cd.webp" alt="Zapatos"
-            class="w-full h-36 object-cover rounded-md">
-          <div class="text-center mt-2">
-            <h3 class="text-sm font-bold text-gray-800">Zapatos</h3>
-          </div>
-        </a>
-
-        <!-- Categoría: Librería -->
-        <a href="#"
-          class="relative overflow-hidden rounded-lg shadow-md bg-white p-2 hover:scale-105 transition-transform">
-          <img src="./images/categories-images/md.webp" alt="Librería" class="w-full h-36 object-cover rounded-md">
-          <div class="text-center mt-2">
-            <h3 class="text-sm font-bold text-gray-800">Librería</h3>
-          </div>
-        </a>
-      </div>
-
-      <!-- BLOQUE 2 -->
-      <div class="grid grid-cols-2 gap-4">
-        <!-- Categoría: Cuidado Personal -->
-        <a href="#"
-          class="relative overflow-hidden rounded-lg shadow-md bg-white p-2 hover:scale-105 transition-transform">
-          <img src="./images/categories-images/img_389242fa29832safd298123faw221ex3.jpg" alt="Cuidado Personal"
-            class="w-full h-36 object-cover rounded-md">
-          <div class="text-center mt-2">
-            <h3 class="text-sm font-bold text-gray-800">Cuidado Personal</h3>
-          </div>
-        </a>
-
-        <!-- Categoría: Hogar -->
-        <a href="#"
-          class="relative overflow-hidden rounded-lg shadow-md bg-white p-2 hover:scale-105 transition-transform">
-          <img src="./images/categories-images/img_974727adf1173e63fae494fa832m423fe72002c569.jpg" alt="Hogar"
-            class="w-full h-36 object-cover rounded-md">
-          <div class="text-center mt-2">
-            <h3 class="text-sm font-bold text-gray-800">Artículos para el Hogar</h3>
-          </div>
-        </a>
-
-        <!-- Categoría: Juguetes -->
-        <a href="#"
-          class="relative overflow-hidden rounded-lg shadow-md bg-white p-2 hover:scale-105 transition-transform">
-          <img src="./images/categories-images/toys_img_974727adf11a73e63fae494efa832m423fe72002c569.jpg" alt="Juguetes"
-            class="w-full h-36 object-cover rounded-md">
-          <div class="text-center mt-2">
-            <h3 class="text-sm font-bold text-gray-800">Juguetes</h3>
-          </div>
-        </a>
-
-        <!-- Categoría: Tecnología -->
-        <a href="#"
-          class="relative overflow-hidden rounded-lg shadow-md bg-white p-2 hover:scale-105 transition-transform">
-          <img src="./images/categories-images/82bbaa48-0232-49e6-b443-ad15de9ee7cd21ew221f2231124c.webp"
-            alt="Tecnología" class="w-full h-36 object-cover rounded-md">
-          <div class="text-center mt-2">
-            <h3 class="text-sm font-bold text-gray-800">Tecnología</h3>
-          </div>
-        </a>
-      </div>
-
-    </div>
-
-    <!-- Bloque de descuentos -->
-    <div id="ofertas-container" class="max-w-7xl mx-auto mt-16 px-4"></div>
-    
-  </main>
-
-  <!--Cookies-->
-<div id="cookie-banner" class="fixed bottom-4 left-4 right-4 bg-white p-4 rounded-lg shadow-lg border border-gray-300 hidden flex items-center justify-between gap-4">
-    <p class="text-sm text-gray-700">Usamos cookies para mejorar tu experiencia. Acepta para continuar navegando.</p>
-    <button id="accept-cookies" class="bg-blue-500 hover:bg-blue-600 text-white px-4 py-2 rounded-md text-sm">Aceptar</button>
+<!-- Menú desplegable en dispositivos móviles -->
+<div id="mobile-menu" class="md:hidden absolute top-0 left-0 w-full bg-white shadow-md z-50 hidden mt-16">
+  <ul>
+    <li><a href="./template/new_clothes.html" class="block px-4 py-2 hover:bg-gray-100">Ropa</a></li>
+    <li><a href="#" class="block px-4 py-2 hover:bg-gray-100">Cosmeticos</a></li>
+    <li><a href="#" class="block px-4 py-2 hover:bg-gray-100">Zapatos</a></li>
+    <li><a href="#" class="block px-4 py-2 hover:bg-gray-100">Libreria</a></li>
+    <li><a href="#" class="block px-4 py-2 hover:bg-gray-100">Tecnología</a></li>
+    <li><a href="#" class="block px-4 py-2 hover:bg-gray-100">Articulos para el Hogar</a></li>
+    <li><a href="#" class="block px-4 py-2 hover:bg-gray-100">Juguetes</a></li>
+    <li><a href="#" class="block px-4 py-2 hover:bg-gray-100">Sobre Nosotros</a></li>
+    <li><a href="#" class="block px-4 py-2 hover:bg-gray-100">Contacto</a></li>
+    <li><a href="#" class="block px-4 py-2 hover:bg-gray-100">Tienda</a></li>
+  </ul>
 </div>
 
-  <!-- Footer -->
-  <footer class="bg-gray-900 text-white py-8 mt-16">
-    <div class="max-w-7xl mx-auto px-4 grid grid-cols-2 md:grid-cols-4 gap-6">
-      <div>
-        <h3 class="text-lg font-bold mb-2">Mapa del Sitio</h3>
-        <ul class="space-y-2">
-          <li><a href="#" class="hover:underline">Inicio</a></li>
-          <li><a href="#" class="hover:underline">Productos</a></li>
-          <li><a href="#" class="hover:underline">Sobre Nosotros</a></li>
-          <li><a href="#" class="hover:underline">Contacto</a></li>
-          <li><a href="./terms-and-conditions.html" class="hover:underline">Terminos y Condiciones</a></li>
-        </ul>
-      </div>
-      <div>
-        <h3 class="text-lg font-bold mb-2">Categorías</h3>
-        <ul class="space-y-2">
-          <li><a href="#" class="hover:underline">Ropa</a></li>
-          <li><a href="#" class="hover:underline">Maquillaje</a></li>
-          <li><a href="#" class="hover:underline">Zapatos</a></li>
-          <li><a href="#" class="hover:underline">Cuidado Personal</a></li>
-        </ul>
-      </div>
-      <div>
-        <h3 class="text-lg font-bold mb-2">Contacto</h3>
-        <p>Email: contacto@tiendadenisse.com</p>
-        <p>Teléfono: +506 7299-6379</p>
-      </div>
-    </div>
-    <div class="text-center text-sm mt-8">
-      &copy; 2025 Denisse S.R.L es Parte de Three Point Fourteen S.A
-    </div>
-  </footer>
-  <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
-  <script src="./js/menu.js"></script>
-  <script src="./js/carousel.js"></script>
-  <script src="./js/discounts.js"></script>
-  <script src="./js/cookies.js"></script>
-  <script>
-    document.addEventListener("DOMContentLoaded", function () {
-      document.body.classList.remove("opacity-0", "translate-y-10");
-    });
-  </script>
-</body>
+<!-- Carrito desplegable -->
+<div id="cart-menu" class="hidden fixed top-16 md:pt-12 left-0 right-0 bg-white shadow-lg z-20 p-4 rounded-tl-lg rounded-tr-lg">
+  <div class="flex justify-between items-center">
+    <h2 class="text-xl font-semibold">Tu Carrito</h2>
+    <button id="close-cart" class="text-gray-500 hover:text-gray-700">
+      <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
+      </svg>
+    </button>
+  </div>
+  <div id="cart-items" class="mt-4"></div>
+  <div id="cart-total" class="mt-4 flex justify-between items-center font-semibold text-lg">
+    Total: $0
+  </div>
+  <div class="mt-4 flex justify-between items-center">
+    <button id="send-order" class="bg-blue-500 text-white py-2 px-4 rounded-lg">Realizar Pedido</button>
+  </div>
+</div>
 
+<!-- Content -->
+
+    <main class="flex-1">
+      <!--Carousel-->
+
+      <div class="relative w-full h-[500px] overflow-hidden">
+        <div class="swiper mySwiper h-full">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide relative">
+              <img
+                src="./images/carousel/Amodernandabstractbackgroundwithfreshcolorslikegreenandgray.Thedesignfeaturessmoothgradientssoftwavesandsubtlegeometricpattern.svg"
+                class="w-full h-full object-cover"
+              />
+              <div
+                class="absolute inset-0 bg-black/50 flex flex-col items-center justify-center text-white text-center px-4"
+              >
+                <h2 class="text-3xl md:text-5xl font-bold">
+                  Encuentra en Tienda Denisse lo que estás buscando
+                </h2>
+                <h3 class="text-lg md:text-2xl mt-2">A precios accesibles</h3>
+                <a
+                  href="#"
+                  class="mt-4 px-8 py-3 bg-gradient-to-r from-emerald-500 to-cyan-500 hover:from-emerald-600 hover:to-cyan-600 text-white font-semibold text-lg rounded-lg shadow-lg transform transition-all duration-300 hover:scale-105 hover:shadow-xl"
+                >
+                  Ver productos
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-button-next text-white"></div>
+          <div class="swiper-button-prev text-white"></div>
+        </div>
+      </div>
+
+      <h2 class="text-3xl font-bold text-center mt-10">
+        Categorías para explorar
+      </h2>
+
+      <!-- CONTENEDOR PRINCIPAL -->
+
+      <div
+        class="grid grid-cols-1 md:grid-cols-2 gap-6 max-w-7xl mx-auto mt-8 px-4"
+      >
+        <!-- BLOQUE 1 -->
+        <div class="grid grid-cols-2 gap-4">
+          <!-- Categoría: Ropa -->
+          <a
+            href="./template/new_clothes.html"
+            class="relative overflow-hidden rounded-lg shadow-md bg-white p-2 hover:scale-105 transition-transform"
+          >
+            <img
+              src="./images/categories-images/clothes.jpeg"
+              alt="Ropa"
+              class="w-full h-36 object-cover rounded-md"
+            />
+            <div class="text-center mt-2">
+              <h3 class="text-sm font-bold text-gray-800">Ropa</h3>
+            </div>
+          </a>
+
+          <!-- Categoría: Salud y Belleza -->
+          <a
+            href="#"
+            class="relative overflow-hidden rounded-lg shadow-md bg-white p-2 hover:scale-105 transition-transform"
+          >
+            <img
+              src="./images/categories-images/img_974727adf1173e63fae494872002c569.jpg"
+              alt="Salud y Belleza"
+              class="w-full h-36 object-cover rounded-md"
+            />
+            <div class="text-center mt-2">
+              <h3 class="text-sm font-bold text-gray-800">Cosmeticos</h3>
+            </div>
+          </a>
+
+          <!-- Categoría: Zapatos -->
+          <a
+            href="#"
+            class="relative overflow-hidden rounded-lg shadow-md bg-white p-2 hover:scale-105 transition-transform"
+          >
+            <img
+              src="./images/categories-images/82bbaa48-0232-49e6-b443-ad15de9ee7cd.webp"
+              alt="Zapatos"
+              class="w-full h-36 object-cover rounded-md"
+            />
+            <div class="text-center mt-2">
+              <h3 class="text-sm font-bold text-gray-800">Zapatos</h3>
+            </div>
+          </a>
+
+          <!-- Categoría: Librería -->
+          <a
+            href="#"
+            class="relative overflow-hidden rounded-lg shadow-md bg-white p-2 hover:scale-105 transition-transform"
+          >
+            <img
+              src="./images/categories-images/md.webp"
+              alt="Librería"
+              class="w-full h-36 object-cover rounded-md"
+            />
+            <div class="text-center mt-2">
+              <h3 class="text-sm font-bold text-gray-800">Librería</h3>
+            </div>
+          </a>
+        </div>
+
+        <!-- BLOQUE 2 -->
+        <div class="grid grid-cols-2 gap-4">
+          <!-- Categoría: Cuidado Personal -->
+          <a
+            href="#"
+            class="relative overflow-hidden rounded-lg shadow-md bg-white p-2 hover:scale-105 transition-transform"
+          >
+            <img
+              src="./images/categories-images/img_389242fa29832safd298123faw221ex3.jpg"
+              alt="Cuidado Personal"
+              class="w-full h-36 object-cover rounded-md"
+            />
+            <div class="text-center mt-2">
+              <h3 class="text-sm font-bold text-gray-800">Cuidado Personal</h3>
+            </div>
+          </a>
+
+          <!-- Categoría: Hogar -->
+          <a
+            href="#"
+            class="relative overflow-hidden rounded-lg shadow-md bg-white p-2 hover:scale-105 transition-transform"
+          >
+            <img
+              src="./images/categories-images/img_974727adf1173e63fae494fa832m423fe72002c569.jpg"
+              alt="Hogar"
+              class="w-full h-36 object-cover rounded-md"
+            />
+            <div class="text-center mt-2">
+              <h3 class="text-sm font-bold text-gray-800">
+                Artículos para el Hogar
+              </h3>
+            </div>
+          </a>
+
+          <!-- Categoría: Juguetes -->
+          <a
+            href="#"
+            class="relative overflow-hidden rounded-lg shadow-md bg-white p-2 hover:scale-105 transition-transform"
+          >
+            <img
+              src="./images/categories-images/toys_img_974727adf11a73e63fae494efa832m423fe72002c569.jpg"
+              alt="Juguetes"
+              class="w-full h-36 object-cover rounded-md"
+            />
+            <div class="text-center mt-2">
+              <h3 class="text-sm font-bold text-gray-800">Juguetes</h3>
+            </div>
+          </a>
+
+          <!-- Categoría: Tecnología -->
+          <a
+            href="#"
+            class="relative overflow-hidden rounded-lg shadow-md bg-white p-2 hover:scale-105 transition-transform"
+          >
+            <img
+              src="./images/categories-images/82bbaa48-0232-49e6-b443-ad15de9ee7cd21ew221f2231124c.webp"
+              alt="Tecnología"
+              class="w-full h-36 object-cover rounded-md"
+            />
+            <div class="text-center mt-2">
+              <h3 class="text-sm font-bold text-gray-800">Tecnología</h3>
+            </div>
+          </a>
+        </div>
+      </div>
+
+      <!-- Bloque de descuentos -->
+      <div id="ofertas-container" class="max-w-7xl mx-auto mt-16 px-4"></div>
+    </main>
+
+    <!--Cookies-->
+    <div
+  id="cookie-banner"
+  class="fixed bottom-0 left-0 right-0 bg-white p-4 rounded-t-lg shadow-lg border-t border-gray-300 z-50 flex items-center justify-between gap-4 hidden"
+>
+  <p class="text-sm text-gray-700">
+    Usamos cookies para mejorar tu experiencia. Acepta para continuar
+    navegando.
+  </p>
+  <button
+    id="accept-cookies"
+    class="bg-blue-500 hover:bg-blue-600 text-white px-4 py-2 rounded-md text-sm"
+  >
+    Aceptar
+  </button>
+</div>
+
+
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-white py-8 mt-16">
+      <div class="max-w-7xl mx-auto px-4 grid grid-cols-2 md:grid-cols-4 gap-6">
+        <div>
+          <h3 class="text-lg font-bold mb-2">Mapa del Sitio</h3>
+          <ul class="space-y-2">
+            <li><a href="#" class="hover:underline">Inicio</a></li>
+            <li><a href="#" class="hover:underline">Productos</a></li>
+            <li>
+              <a href="./about.html" class="hover:underline">Sobre Nosotros</a>
+            </li>
+            <li><a href="#" class="hover:underline">Contacto</a></li>
+            <li>
+              <a href="./terms-and-conditions.html" class="hover:underline"
+                >Terminos y Condiciones</a
+              >
+            </li>
+          </ul>
+        </div>
+        <div>
+          <h3 class="text-lg font-bold mb-2">Categorías</h3>
+          <ul class="space-y-2">
+            <li><a href="#" class="hover:underline">Ropa</a></li>
+            <li><a href="#" class="hover:underline">Maquillaje</a></li>
+            <li><a href="#" class="hover:underline">Zapatos</a></li>
+            <li><a href="#" class="hover:underline">Cuidado Personal</a></li>
+          </ul>
+        </div>
+        <div>
+          <h3 class="text-lg font-bold mb-2">Contacto</h3>
+          <p>Email: contacto@tiendadenisse.com</p>
+          <p>Teléfono: +506 7299-6379</p>
+        </div>
+      </div>
+      <div class="text-center text-sm mt-8">
+        &copy; 2025 Denisse S.R.L es Parte de Three Point Fourteen S.A
+      </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+    <script src="./js/menu.js"></script>
+    <script src="./js/carousel.js"></script>
+    <script src="./js/discounts.js"></script>
+    <script src="./js/cookies.js"></script>
+    <script src="./js/cart.js"></script>
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        document.body.classList.remove("opacity-0", "translate-y-10");
+      });
+    </script>
+  </body>
 </html>

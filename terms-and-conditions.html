@@ -12,73 +12,213 @@
   </head>
   <body
     class="bg-[#e3e6e6] opacity-0 transform translate-y-10 transition-all duration-700 flex flex-col min-h-screen">
-    
     <div class="h-20">
       <nav class="bg-white shadow-md fixed w-full z-50">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div class="flex justify-between items-center py-4">
-            <a href="./index.html">
-            <img src="./images/minimalisticandattractivehorizontallogoforTiendaDenisse.Thedesignshouldbesleekprofessionalandsuitableforawebsitenavb-ezgif.png" 
-            alt="Logo Tienda Denisse" 
-            class="h-12 md:h-14 lg:h-16 w-auto">
-          </a>
+            <a href="../index.html">
+              <img
+                src="../images/minimalisticandattractivehorizontallogoforTiendaDenisse.Thedesignshouldbesleekprofessionalandsuitableforawebsitenavb-ezgif.png"
+                alt="Logo Tienda Denisse"
+                class="h-12 md:h-14 lg:h-16 w-auto"
+              />
+            </a>
 
-            <button id="menu-toggle" class="md:hidden text-gray-700">☰</button>
-            <div
-              id="menu"
-              class="hidden md:flex md:flex-row md:gap-x-4 absolute md:relative bg-white w-full md:w-auto top-full md:top-0 left-0 shadow-lg md:shadow-none z-50 transition-all duration-300 ease-in-out"
-            >
-              <div class="relative group">
-                <button class="text-gray-700 hover:text-blue-600 font-semibold">
-                  Productos
-                </button>
-                <div
-                  class="absolute left-0 mt-2 w-48 bg-white shadow-lg rounded-md opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all"
-                >
-                  <a
-                    href="../template/new_clothes.html"
-                    class="block px-4 py-2 hover:bg-gray-100"
-                    >Ropa</a
+            <!-- Carrito y Menú en versión de escritorio -->
+            <div class="flex items-center space-x-4 md:space-x-8">
+              <!-- Menú en versión de escritorio -->
+              <div id="menu" class="hidden md:flex md:flex-row md:gap-x-4">
+                <div class="relative group">
+                  <button
+                    class="text-gray-700 hover:text-blue-600 font-semibold flex items-center space-x-1"
                   >
-                  <a href="#" class="block px-4 py-2 hover:bg-gray-100"
-                    >Maquillaje</a
+                    <span>Productos</span>
+                    <svg
+                      class="w-4 h-4 transform group-hover:rotate-180 transition-transform duration-200"
+                      xmlns="http://www.w3.org/2000/svg"
+                      viewBox="0 0 20 20"
+                      fill="currentColor"
+                      aria-hidden="true"
+                    >
+                      <path
+                        fill-rule="evenodd"
+                        d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z"
+                        clip-rule="evenodd"
+                      />
+                    </svg>
+                  </button>
+                  <div
+                    class="absolute left-0 mt-2 w-48 bg-white shadow-lg rounded-md opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 ease-in-out"
                   >
-                  <a href="#" class="block px-4 py-2 hover:bg-gray-100"
-                    >Zapatos</a
-                  >
-                  <a href="#" class="block px-4 py-2 hover:bg-gray-100"
-                    >Liberia</a
-                  >
-                  <a href="#" class="block px-4 py-2 hover:bg-gray-100"
-                    >Salud y Belleza</a
-                  >
-                  <a href="#" class="block px-4 py-2 hover:bg-gray-100"
-                    >Articulos para el Hogar</a
-                  >
-                  <a href="#" class="block px-4 py-2 hover:bg-gray-100"
-                    >Juguetes</a
-                  >
+                    <a
+                      href="../template/new_clothes.html"
+                      class="block px-4 py-2 hover:bg-gray-100"
+                      >Ropa</a
+                    >
+                    <a
+                      href="../template/make_up.html"
+                      class="block px-4 py-2 hover:bg-gray-100"
+                      >Cosmeticos</a
+                    >
+                    <a
+                      href="../template/shoes.html"
+                      class="block px-4 py-2 hover:bg-gray-100"
+                      >Zapatos</a
+                    >
+                    <a
+                      href="../template/bookshop.html"
+                      class="block px-4 py-2 hover:bg-gray-100"
+                      >Libreria</a
+                    >
+                    <a href="" class="block px-4 py-2 hover:bg-gray-100"
+                      >Tecnología</a
+                    >
+                    <a
+                      href="../template/home.html"
+                      class="block px-4 py-2 hover:bg-gray-100"
+                      >Articulos para el Hogar</a
+                    >
+                    <a
+                      href="../template/toys.html"
+                      class="block px-4 py-2 hover:bg-gray-100"
+                      >Juguetes</a
+                    >
+                  </div>
                 </div>
+                <a
+                  href="#"
+                  class="text-gray-700 hover:text-blue-600 font-semibold"
+                  >Sobre Nosotros</a
+                >
+                <a
+                  href="#"
+                  class="text-gray-700 hover:text-blue-600 font-semibold"
+                  >Contacto</a
+                >
+                <a
+                  href="#"
+                  class="text-gray-700 hover:text-blue-600 font-semibold"
+                  >Tienda</a
+                >
               </div>
-              <a
-                href="#"
-                class="text-gray-700 hover:text-blue-600 font-semibold"
-                >Sobre Nosotros</a
-              >
-              <a
-                href="#"
-                class="text-gray-700 hover:text-blue-600 font-semibold"
-                >Contacto</a
-              >
-              <a
-                href="#"
-                class="text-gray-700 hover:text-blue-600 font-semibold"
-                >Tienda</a
-              >
+
+              <!-- Carrito en versión de escritorio (a la derecha) -->
+              <div class="flex items-center ml-auto">
+                <button id="cart-toggle" class="relative">
+                  <img
+                    src="../images/596f0d8cb733b17268752d044976f102-shopping-bag-icon.webp"
+                    alt="Carrito"
+                    class="h-7 w-7"
+                  />
+                  <span
+                    id="cart-count"
+                    class="absolute top-0 right-0 text-xs bg-red-500 text-white rounded-full px-1 py-1 text-[0.4rem] hidden"
+                    >0</span
+                  >
+                </button>
+              </div>
             </div>
+
+            <!-- Menú en dispositivos móviles -->
+            <button
+              id="menu-toggle"
+              class="md:hidden text-gray-700 hover:text-blue-600 focus:outline-none"
+            >
+              <span class="block w-6 h-0.5 bg-gray-700 mb-1"></span>
+              <span class="block w-6 h-0.5 bg-gray-700 mb-1"></span>
+              <span class="block w-6 h-0.5 bg-gray-700"></span>
+            </button>
           </div>
         </div>
       </nav>
+
+      <!-- Menú desplegable en dispositivos móviles -->
+      <div
+        id="mobile-menu"
+        class="md:hidden absolute top-0 left-0 w-full bg-white shadow-md z-50 hidden mt-16"
+      >
+        <ul>
+          <li>
+            <a
+              href="../template/new_clothes.html"
+              class="block px-4 py-2 hover:bg-gray-100"
+              >Ropa</a
+            >
+          </li>
+          <li>
+            <a href="#" class="block px-4 py-2 hover:bg-gray-100">Cosmeticos</a>
+          </li>
+          <li>
+            <a href="#" class="block px-4 py-2 hover:bg-gray-100">Zapatos</a>
+          </li>
+          <li>
+            <a href="#" class="block px-4 py-2 hover:bg-gray-100">Libreria</a>
+          </li>
+          <li>
+            <a href="#" class="block px-4 py-2 hover:bg-gray-100">Tecnología</a>
+          </li>
+          <li>
+            <a href="#" class="block px-4 py-2 hover:bg-gray-100"
+              >Articulos para el Hogar</a
+            >
+          </li>
+          <li>
+            <a href="#" class="block px-4 py-2 hover:bg-gray-100">Juguetes</a>
+          </li>
+          <li>
+            <a href="#" class="block px-4 py-2 hover:bg-gray-100"
+              >Sobre Nosotros</a
+            >
+          </li>
+          <li>
+            <a href="#" class="block px-4 py-2 hover:bg-gray-100">Contacto</a>
+          </li>
+          <li>
+            <a href="#" class="block px-4 py-2 hover:bg-gray-100">Tienda</a>
+          </li>
+        </ul>
+      </div>
+
+      <!-- Carrito desplegable -->
+      <div
+        id="cart-menu"
+        class="hidden fixed top-16 md:pt-12 left-0 right-0 bg-white shadow-lg z-20 p-4 rounded-tl-lg rounded-tr-lg"
+      >
+        <div class="flex justify-between items-center">
+          <h2 class="text-xl font-semibold">Tu Carrito</h2>
+          <button id="close-cart" class="text-gray-500 hover:text-gray-700">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              class="h-6 w-6"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke="currentColor"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M6 18L18 6M6 6l12 12"
+              />
+            </svg>
+          </button>
+        </div>
+        <div id="cart-items" class="mt-4"></div>
+        <div
+          id="cart-total"
+          class="mt-4 flex justify-between items-center font-semibold text-lg"
+        >
+          Total: $0
+        </div>
+        <div class="mt-4 flex justify-between items-center">
+          <button
+            id="send-order"
+            class="bg-blue-500 text-white py-2 px-4 rounded-lg"
+          >
+            Realizar Pedido
+          </button>
+        </div>
+      </div>
     </div>
 
     <main class="flex-1">
@@ -258,9 +398,10 @@
     </footer>
 
     <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
-    <script src="../js/menu.js"></script>
-    <script src="../js/product.js"></script>
-    <script src="../js/discounts.js"></script>
+    <script src="./js/menu.js"></script>
+    <script src="./js/product.js"></script>
+    <script src="./js/discounts.js"></script>
+    <script src="./js/cart.js"></script>
     <script>
       document.addEventListener("DOMContentLoaded", function () {
         document.body.classList.remove("opacity-0", "translate-y-10");

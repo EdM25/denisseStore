@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tienda Denisse - Sonbre Nosotros</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"
+    />
+  </head>
+  <body
+    class="bg-[#e3e6e6] opacity-0 transform translate-y-10 transition-all duration-700 flex flex-col min-h-screen"
+  >
+    <div class="h-20">
+      <nav class="bg-white shadow-md fixed w-full z-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div class="flex justify-between items-center py-4">
+            <a href="./index.html">
+              <img
+                src="./images/minimalisticandattractivehorizontallogoforTiendaDenisse.Thedesignshouldbesleekprofessionalandsuitableforawebsitenavb-ezgif.png"
+                alt="Logo Tienda Denisse"
+                class="h-12 md:h-14 lg:h-16 w-auto"
+              />
+            </a>
+
+            <!-- Menú en dispositivos móviles -->
+            <button
+              id="menu-toggle"
+              class="md:hidden text-gray-700 hover:text-blue-600 focus:outline-none"
+            >
+              <span class="block w-6 h-0.5 bg-gray-700 mb-1"></span>
+              <span class="block w-6 h-0.5 bg-gray-700 mb-1"></span>
+              <span class="block w-6 h-0.5 bg-gray-700"></span>
+            </button>
+
+            <!-- Menú en desktop -->
+            <div
+              id="menu"
+              class="hidden md:flex md:flex-row md:gap-x-4 absolute md:relative bg-white w-full md:w-auto top-full md:top-0 left-0 shadow-lg md:shadow-none z-50 transition-all duration-300 ease-in-out"
+            >
+              <!-- Menú desplegable de categorías -->
+              <div class="relative group">
+                <button
+                  class="text-gray-700 hover:text-blue-600 font-semibold flex items-center space-x-1"
+                >
+                  <span>Productos</span>
+                  <svg
+                    class="w-4 h-4 transform group-hover:rotate-180 transition-transform duration-200"
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 20 20"
+                    fill="currentColor"
+                    aria-hidden="true"
+                  >
+                    <path
+                      fill-rule="evenodd"
+                      d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z"
+                      clip-rule="evenodd"
+                    />
+                  </svg>
+                </button>
+                <div
+                  class="absolute left-0 mt-2 w-48 bg-white shadow-lg rounded-md opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 ease-in-out"
+                >
+                  <a
+                    href="./template/new_clothes.html"
+                    class="block px-4 py-2 hover:bg-gray-100"
+                    >Ropa</a
+                  >
+                  <a
+                    href="./template/make_up.html"
+                    class="block px-4 py-2 hover:bg-gray-100"
+                    >Cosmeticos</a
+                  >
+                  <a
+                    href="./template/shoes.html"
+                    class="block px-4 py-2 hover:bg-gray-100"
+                    >Zapatos</a
+                  >
+                  <a
+                    href="./template/bookshop.html"
+                    class="block px-4 py-2 hover:bg-gray-100"
+                    >Liberia</a
+                  >
+                  <a href="" class="block px-4 py-2 hover:bg-gray-100"
+                    >Tecnología</a
+                  >
+                  <a
+                    href="./template/home.html"
+                    class="block px-4 py-2 hover:bg-gray-100"
+                    >Articulos para el Hogar</a
+                  >
+                  <a
+                    href="./template/toys.html"
+                    class="block px-4 py-2 hover:bg-gray-100"
+                    >Juguetes</a
+                  >
+                </div>
+              </div>
+              <!-- Otros enlaces -->
+              <a
+                href="#"
+                class="text-gray-700 hover:text-blue-600 font-semibold"
+                >Sobre Nosotros</a
+              >
+              <a
+                href="#"
+                class="text-gray-700 hover:text-blue-600 font-semibold"
+                >Contacto</a
+              >
+              <a
+                href="#"
+                class="text-gray-700 hover:text-blue-600 font-semibold"
+                >Tienda</a
+              >
+            </div>
+          </div>
+        </div>
+      </nav>
+    </div>
+
+    <main class="flex-1">
+      <!-- Botón de volver atrás -->
+      <div class="max-w-4xl mx-auto px-4 mt-6 mb-2">
+        <button
+          onclick="history.back()"
+          class="flex items-center gap-2 px-5 py-3 bg-white text-black font-semibold rounded-lg shadow-md transition-all duration-300 hover:bg-gray-100 hover:scale-105"
+        >
+          ⬅ Volver atrás
+        </button>
+      </div>
+
+      <div class="max-w-4xl mx-auto p-6 bg-white shadow-lg rounded-lg mt-10">
+        <h1 class="text-3xl font-bold text-center text-gray-900 mb-6">
+          Sobre Nosotros
+        </h1>
+
+        <section class="mb-6">
+          <h2 class="text-xl font-semibold">Nuestra Mision</h2>
+          <p>
+            Tienda Denisse es una marca administrada en su totalidad por Three
+            Point Fourteen S.A., que posee el 30% de Denisse S.R.L. Al realizar
+            una compra en nuestra tienda, el cliente acepta los siguientes
+            términos y condiciones, los cuales están alineados con la
+            legislación vigente en Costa Rica.
+          </p>
+        </section>
+
+        <section class="mb-6">
+          <h2 class="text-xl font-semibold">2. Realización de Pedidos</h2>
+          <ul class="list-disc pl-6">
+            <li>
+              Todos los pedidos se procesan en un plazo de 1 a 3 días hábiles.
+            </li>
+            <li>
+              La disponibilidad de los productos está sujeta a cambios sin
+              previo aviso.
+            </li>
+            <li>
+              El cliente es responsable de proporcionar información de envío
+              correcta y actualizada.
+            </li>
+          </ul>
+        </section>
+
+        <section class="mb-6">
+          <h2 class="text-xl font-semibold">3. Política de Envíos</h2>
+          <ul class="list-disc pl-6">
+            <li>Los envíos se realizan a través de Correos de Costa Rica.</li>
+            <li>
+              Las tarifas de envío pueden variar según la ubicación del
+              destinatario.
+            </li>
+            <li>
+              Una vez enviado el paquete, se proporcionará un número de rastreo.
+            </li>
+            <li>
+              No nos hacemos responsables por retrasos causados por la empresa
+              de envíos.
+            </li>
+          </ul>
+        </section>
+
+        <section class="mb-6">
+          <h2 class="text-xl font-semibold">4. Política de Devoluciones</h2>
+          <ul class="list-disc pl-6">
+            <li>
+              Los clientes pueden solicitar una devolución dentro de los 3 días
+              posteriores a la entrega del paquete.
+            </li>
+            <li>
+              Para procesar la devolución, el producto debe estar en su estado
+              original, sin usar y con su empaque original.
+            </li>
+            <li>
+              No se aceptan devoluciones de productos de uso personal por
+              razones de higiene.
+            </li>
+            <li>
+              Los costos de envío para la devolución serán asumidos por el
+              cliente, salvo en casos de defectos de fabricación o errores en el
+              envío.
+            </li>
+          </ul>
+        </section>
+
+        <section class="mb-6">
+          <h2 class="text-xl font-semibold">5. Garantías y Reembolsos</h2>
+          <ul class="list-disc pl-6">
+            <li>
+              En caso de productos defectuosos, el cliente puede solicitar un
+              cambio o reembolso dentro del plazo establecido.
+            </li>
+            <li>
+              El reembolso se realizará mediante el mismo método de pago
+              utilizado en la compra.
+            </li>
+          </ul>
+        </section>
+
+        <section class="mb-6">
+          <h2 class="text-xl font-semibold">6. Métodos de Pago</h2>
+          <ul class="list-disc pl-6">
+            <li>
+              Los pagos se realizan a través de SIMPE Móvil o transferencia
+              bancaria.
+            </li>
+            <li>
+              Con el fin de garantizar la transparencia y confianza en nuestras
+              transacciones, se proporcionarán los datos completos del titular
+              de la cuenta bancaria, asegurando que la operación se realiza con
+              un negocio legítimo y formalmente constituido.
+            </li>
+          </ul>
+        </section>
+
+        <section class="mb-6">
+          <h2 class="text-xl font-semibold">7. Responsabilidad Legal</h2>
+          <ul class="list-disc pl-6">
+            <li>
+              Three Point Fourteen S.A. se reserva el derecho de modificar estos
+              términos y condiciones en cualquier momento.
+            </li>
+            <li>
+              Cualquier disputa será resuelta conforme a las leyes de Costa
+              Rica.
+            </li>
+          </ul>
+        </section>
+
+        <section>
+          <h2 class="text-xl font-semibold">8. Contacto</h2>
+          <p>
+            Para cualquier consulta sobre estos términos y condiciones, puede
+            contactarnos a través de nuestro correo electrónico:
+            <a
+              href="mailto:contacto@tiendadenisse.com"
+              class="text-blue-600 hover:underline"
+              >contacto@tiendadenisse.com</a
+            >
+          </p>
+        </section>
+      </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-white py-8 mt-16">
+      <div class="max-w-7xl mx-auto px-4 grid grid-cols-2 md:grid-cols-4 gap-6">
+        <div>
+          <h3 class="text-lg font-bold mb-2">Mapa del Sitio</h3>
+          <ul class="space-y-2">
+            <li><a href="#" class="hover:underline">Inicio</a></li>
+            <li><a href="#" class="hover:underline">Productos</a></li>
+            <li><a href="#" class="hover:underline">Sobre Nosotros</a></li>
+            <li><a href="#" class="hover:underline">Contacto</a></li>
+            <li>
+              <a href="./terms-and-conditions.html" class="hover:underline"
+                >Terminos y Condiciones</a
+              >
+            </li>
+          </ul>
+        </div>
+        <div>
+          <h3 class="text-lg font-bold mb-2">Categorías</h3>
+          <ul class="space-y-2">
+            <li><a href="#" class="hover:underline">Ropa</a></li>
+            <li><a href="#" class="hover:underline">Maquillaje</a></li>
+            <li><a href="#" class="hover:underline">Zapatos</a></li>
+            <li><a href="#" class="hover:underline">Cuidado Personal</a></li>
+          </ul>
+        </div>
+        <div>
+          <h3 class="text-lg font-bold mb-2">Contacto</h3>
+          <p>Email: contacto@tiendadenisse.com</p>
+          <p>Teléfono: +506 1234-5678</p>
+        </div>
+      </div>
+      <div class="text-center text-sm mt-8">
+        &copy; 2025 Denisse S.R.L es Parte de Three Point Fourteen S.A
+      </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+    <script src="../js/menu.js"></script>
+    <script src="../js/product.js"></script>
+    <script src="../js/discounts.js"></script>
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        document.body.classList.remove("opacity-0", "translate-y-10");
+      });
+    </script>
+  </body>
+</html>

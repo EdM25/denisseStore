@@ -1,10 +1,8 @@
-document.addEventListener("DOMContentLoaded", function () {
-  const toggleButton = document.getElementById("menu-toggle");
-  const menu = document.getElementById("menu");
+const menuToggle = document.getElementById("menu-toggle");
+const mobileMenu = document.getElementById("mobile-menu");
 
-  toggleButton.addEventListener("click", () => {
-    menu.classList.toggle("hidden");
-    menu.classList.toggle("flex");
-    menu.classList.toggle("flex-col"); // Asegura el diseño en columna
-  });
+menuToggle.addEventListener("click", () => {
+  mobileMenu.classList.toggle("hidden");
+  menu.classList.toggle("flex");
+  menu.classList.toggle("flex-col");
 });
