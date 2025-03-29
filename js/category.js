@@ -1,5 +1,5 @@
 document.addEventListener("DOMContentLoaded", async () => {
-    const categories = ["bookshop", "home", "make_up", "new_clothes", "personal_care", "shoes", "toys"];
+    const categories = ["bookshop", "home", "beauty", "new_clothes", "personal_care", "shoes", "toys", "technology"];
 
     // Obtiene el nombre del HTML actual sin la extensión
     const currentPage = window.location.pathname.split("/").pop().replace(".html", "");

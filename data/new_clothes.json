@@ -6,9 +6,9 @@
     "price": "25,300.00",
     "image": "../images/clothes/product1.jpg",
     "size": ["S"],
-    "discount": "",
-    "category": "new_clothes"
-    
+    "discount": "20%",
+    "category": "new_clothes",
+    "weight": 250
   },
   {
     "id": 112023,
@@ -17,7 +17,8 @@
     "price": "13,700.00",
     "image": "../images/clothes/product1.jpg",
     "size": ["S"],
-    "category": "new_clothes" 
+    "category": "new_clothes",
+    "weight": 250
   },
   {
     "id": 125066,
@@ -26,7 +27,8 @@
     "price": "14,000.00",
     "image": "../images/clothes/product1.jpg",
     "size": ["S"],
-    "category": "new_clothes" 
+    "category": "new_clothes",
+    "weight": 250 
   },
   {
     "id": 127419,
@@ -35,7 +37,8 @@
     "price": "16,700.00",
     "image": "../images/clothes/product1.jpg",
     "size": ["S"],
-    "category": "new_clothes" 
+    "category": "new_clothes",
+    "weight": 250 
   },
   {
     "id": 128059,
@@ -44,7 +47,8 @@
     "price": "15,300.00",
     "image": "../images/clothes/product1.jpg",
     "size": ["S"],
-    "category": "new_clothes" 
+    "category": "new_clothes",
+    "weight": 250 
   },
   {
     "id": 129241,
@@ -53,7 +57,8 @@
     "price": "16,900.00",
     "image": "../images/clothes/product1.jpg",
     "size": ["S"],
-    "category": "new_clothes" 
+    "category": "new_clothes",
+    "weight": 250 
   },
   {
     "id": 130321,
@@ -62,7 +67,8 @@
     "price": "25,400.00",
     "image": "../images/clothes/product1.jpg",
     "size": ["S"],
-    "category": "new_clothes" 
+    "category": "new_clothes",
+    "weight": 250 
   },
   {
     "id": 131287,
@@ -71,7 +77,8 @@
     "price": "14,500.00",
     "image": "../images/clothes/product1.jpg",
     "size": ["S"],
-    "category": "new_clothes" 
+    "category": "new_clothes",
+    "weight": 250 
   },
   {
     "id": 125002,
@@ -80,7 +87,8 @@
     "price": "17,500.00",
     "image": "../images/clothes/product1.jpg",
     "size": ["S"],
-    "category": "new_clothes" 
+    "category": "new_clothes",
+    "weight": 250 
   },
   {
     "id": 127234,
@@ -89,7 +97,8 @@
     "price": "21,500.00",
     "image": "../images/clothes/product1.jpg",
     "size": ["S"],
-    "category": "new_clothes" 
+    "category": "new_clothes",
+    "weight": 250 
   },
   {
     "id": 127235,
@@ -98,7 +107,8 @@
     "price": "21,500.00",
     "image": "../images/clothes/product1.jpg",
     "size": ["S"],
-    "category": "new_clothes" 
+    "category": "new_clothes",
+    "weight": 250 
   },
   {
     "id": 129345,
@@ -107,7 +117,8 @@
     "price": "30,500.00",
     "image": "../images/clothes/product1.jpg",
     "size": ["S"],
-    "category": "new_clothes" 
+    "category": "new_clothes",
+    "weight": 250 
   },
   {
     "id": 113754,
@@ -116,7 +127,8 @@
     "price": "28,900.00",
     "image": "../images/clothes/product1.jpg",
     "size": ["S"],
-    "category": "new_clothes" 
+    "category": "new_clothes",
+    "weight": 250 
   },
   {
     "id": 120489,
@@ -125,7 +137,8 @@
     "price": "29,500.00",
     "image": "../images/clothes/product1.jpg",
     "size": ["S", "M", "L", "X"],
-    "category": "new_clothes" 
+    "category": "new_clothes",
+    "weight": 250 
   },
   {
     "id": 134030,
@@ -134,7 +147,8 @@
     "price": "16,900.00",
     "image": "../images/clothes/product1.jpg",
     "size": ["S", "M", "L", "X"],
-    "category": "new_clothes" 
+    "category": "new_clothes",
+    "weight": 250 
   },
   {
     "id": 133225,
@@ -143,7 +157,8 @@
     "price": "20,900.00",
     "image": "../images/clothes/product1.jpg",
     "size": ["S"],
-    "category": "new_clothes" 
+    "category": "new_clothes",
+    "weight": 250 
   },
   {
     "id": 135047,
@@ -152,7 +167,8 @@
     "price": "9,200.00",
     "image": "../images/clothes/product1.jpg",
     "size": ["S", "M", "L", "X"],
-    "category": "new_clothes" 
+    "category": "new_clothes",
+    "weight": 250 
   },
   {
     "id": 135055,
@@ -161,7 +177,8 @@
     "price": "8,600.00",
     "image": "../images/clothes/product1.jpg",
     "size": ["S", "M", "L", "X"],
-    "category": "new_clothes" 
+    "category": "new_clothes",
+    "weight": 250 
   },
   {
     "id": 135067,
@@ -170,7 +187,8 @@
     "price": "10,300.00",
     "image": "../images/clothes/product1.jpg",
     "size": ["S", "M", "L", "X"],
-    "category": "new_clothes" 
+    "category": "new_clothes",
+    "weight": 250 
   },
   {
     "id": 135160,
@@ -179,7 +197,8 @@
     "price": "9,600.00",
     "image": "../images/clothes/product1.jpg",
     "size": ["S", "M", "L", "X"],
-    "category": "new_clothes" 
+    "category": "new_clothes",
+    "weight": 250 
   },
   {
     "id": 135217,
@@ -188,7 +207,8 @@
     "price": "24,500.00",
     "image": "../images/clothes/product1.jpg",
     "size": ["S", "M", "L", "X"],
-    "category": "new_clothes" 
+    "category": "new_clothes",
+    "weight": 250 
   },
   {
     "id": 136075,
@@ -197,7 +217,8 @@
     "price": "26,900.00",
     "image": "../images/clothes/product1.jpg",
     "size": ["S", "M", "L", "X"],
-    "category": "new_clothes" 
+    "category": "new_clothes",
+    "weight": 250 
   },
   {
     "id": 137146,
@@ -206,7 +227,8 @@
     "price": "16,900.00",
     "image": "../images/clothes/product1.jpg",
     "size": ["S", "M", "L", "X"],
-    "category": "new_clothes" 
+    "category": "new_clothes",
+    "weight": 250 
   },
   {
     "id": 137561,
@@ -215,7 +237,8 @@
     "price": "12,900.00",
     "image": "../images/clothes/product1.jpg",
     "size": ["S", "M", "L", "X"],
-    "category": "new_clothes" 
+    "category": "new_clothes",
+    "weight": 250 
   },
   {
     "id": 139032,
@@ -224,7 +247,8 @@
     "price": "9,900.00",
     "image": "../images/clothes/product1.jpg",
     "size": ["S", "M", "L", "X"],
-    "category": "new_clothes" 
+    "category": "new_clothes",
+    "weight": 250 
   },
   {
     "id": 142063,
@@ -233,7 +257,8 @@
     "price": "16,200.00",
     "image": "../images/clothes/product1.jpg",
     "size": ["S", "M", "L", "X"],
-    "category": "new_clothes" 
+    "category": "new_clothes",
+    "weight": 250 
   },
   {
     "id": 138269,
@@ -242,7 +267,8 @@
     "price": "24,900.00",
     "image": "../images/clothes/product1.jpg",
     "size": ["S", "M", "L", "X"],
-    "category": "new_clothes" 
+    "category": "new_clothes",
+    "weight": 250 
   },
   {
     "id": 138421,
@@ -251,7 +277,8 @@
     "price": "14,900.00",
     "image": "../images/clothes/product1.jpg",
     "size": ["S", "M", "L", "X"],
-    "category": "new_clothes" 
+    "category": "new_clothes",
+    "weight": 250 
   },
   {
     "id": 138686,
@@ -260,7 +287,8 @@
     "price": "18,900.00",
     "image": "../images/clothes/product1.jpg",
     "size": ["S", "M", "L", "X"],
-    "category": "new_clothes" 
+    "category": "new_clothes",
+    "weight": 250 
   },
   {
     "id": 143091,
@@ -269,7 +297,8 @@
     "price": "15,900.00",
     "image": "../images/clothes/product1.jpg",
     "size": ["S", "M", "L", "X"],
-    "category": "new_clothes" 
+    "category": "new_clothes",
+    "weight": 250 
   },
   {
     "id": 139111,
@@ -278,7 +307,8 @@
     "price": "23,900.00",
     "image": "../images/clothes/product1.jpg",
     "size": ["S", "M", "L", "X"],
-    "category": "new_clothes" 
+    "category": "new_clothes",
+    "weight": 250 
   },
   {
     "id": 139198,
@@ -287,7 +317,8 @@
     "price": "16,900.00",
     "image": "../images/clothes/product1.jpg",
     "size": ["S", "M", "L", "X"],
-    "category": "new_clothes" 
+    "category": "new_clothes",
+    "weight": 250 
   },
   {
     "id": 144003,
@@ -296,6 +327,7 @@
     "price": "19,500.00",
     "image": "../images/clothes/product1.jpg",
     "size": ["S", "M", "L", "X"],
-    "category": "new_clothes" 
+    "category": "new_clothes",
+    "weight": 250 
   }
 ]
