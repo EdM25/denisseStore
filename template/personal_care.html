@@ -1,10 +1,60 @@
 <!DOCTYPE html>
+<!--
+  ***************************************************************
+  * Tienda Denisse - Desarrollado por NorthWest Technologies S.R.L. *
+  ***************************************************************
+  
+  Nombre del Proyecto: Tienda Denisse
+  Desarrollado por: NorthWest Technologies S.R.L.
+  Propietario: Three Point Fourteen S.A.
+
+  Fecha de Inicio del Proyecto: Marzo 2025
+  Última Actualización: v1.0.3.2
+  
+  Descripción:
+  Este proyecto consiste en el desarrollo de una plataforma de comercio electrónico para Tienda Denisse, diseñada para ofrecer productos en diversas categorías. La aplicación está construida utilizando tecnologías modernas y sigue prácticas de desarrollo de software profesionales.
+
+  Responsables del Desarrollo:
+    - Equipo de Desarrollo Frontend y Backend: NorthWest Team #1
+    - Equipo de Diseño UX/UI: Stephanie C.
+    - Gestión de Proyecto: Edgar Steller Madrigal
+
+  ***************************************************************
+  * Licencia de Uso y Derechos de Autor:
+  ***************************************************************
+  
+  Este proyecto utiliza varias bibliotecas de código abierto bajo sus respectivas licencias.
+  
+  - **Tailwind CSS** (MIT License):
+    Tailwind CSS es un framework de CSS de código abierto utilizado para el diseño y la personalización de la interfaz de usuario de este proyecto. Puedes consultar la licencia completa en: https://opensource.org/licenses/MIT
+
+  ***************************************************************
+  * Licencia de Propiedad Intelectual y Condiciones de Uso:
+  ***************************************************************
+  
+  Derechos de autor © 2025 NorthWest Technologies S.R.L. / Three Point Fourteen S.A.
+  
+  El código fuente de este proyecto está protegido por derechos de autor y no puede ser reproducido ni distribuido sin el permiso explícito de NorthWest Technologies S.R.L.
+  
+  - **Uso Comercial**: Este código puede ser utilizado solo para fines comerciales relacionados con la empresa Three Point Fourteen S.A. y sus subsidiarias.
+  - **Modificaciones**: Cualquier modificación o distribución del código debe estar acompañada de este comentario de derechos de autor y la licencia correspondiente.
+  
+  ***************************************************************
+  * Contacto y Soporte Técnico:
+  ***************************************************************
+  
+  Para preguntas o soporte técnico, por favor contacte a:
+  
+  - Correo Electrónico de Soporte: help-center@northwestcr.com
+  - Sitio Web: https://northwestcr.com
+  
+  ***************************************************************
+-->
 <html lang="es">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Tienda Denisse - Cuidado Personal</title>
-    <script src="https://cdn.tailwindcss.com"></script>
     <link
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"
@@ -17,7 +67,7 @@
       <nav class="bg-white shadow-md fixed w-full z-50">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div class="flex justify-between items-center py-4">
-            <a href="./index.html">
+            <a href="../index.html">
               <img
                 src="../images/minimalisticandattractivehorizontallogoforTiendaDenisse.Thedesignshouldbesleekprofessionalandsuitableforawebsitenavb-ezgif.png"
                 alt="Logo Tienda Denisse"
@@ -25,7 +75,108 @@
               />
             </a>
 
-            <!-- Menú en dispositivos móviles -->
+            <!-- Cart and Menu in desktop version -->
+            <div class="flex items-center space-x-4 md:space-x-8">
+              <!-- Desktop version menu -->
+              <div id="menu" class="hidden md:flex md:flex-row md:gap-x-4">
+                <div class="relative group">
+                  <button
+                    class="text-gray-700 hover:text-blue-600 font-semibold flex items-center space-x-1"
+                  >
+                    <span>Productos</span>
+                    <svg
+                      class="w-4 h-4 transform group-hover:rotate-180 transition-transform duration-200"
+                      xmlns="http://www.w3.org/2000/svg"
+                      viewBox="0 0 20 20"
+                      fill="currentColor"
+                      aria-hidden="true"
+                    >
+                      <path
+                        fill-rule="evenodd"
+                        d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z"
+                        clip-rule="evenodd"
+                      />
+                    </svg>
+                  </button>
+                  <div
+                    class="absolute left-0 mt-2 w-48 bg-white shadow-lg rounded-md opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 ease-in-out"
+                  >
+                    <a
+                      href="../template/new_clothes.html"
+                      class="block px-4 py-2 hover:bg-gray-100"
+                      >Ropa</a
+                    >
+                    <a
+                      href="../template/make_up.html"
+                      class="block px-4 py-2 hover:bg-gray-100"
+                      >Cosmeticos</a
+                    >
+                    <a
+                      href="../template/shoes.html"
+                      class="block px-4 py-2 hover:bg-gray-100"
+                      >Zapatos</a
+                    >
+                    <a
+                      href="../template/bookshop.html"
+                      class="block px-4 py-2 hover:bg-gray-100"
+                      >Libreria</a
+                    >
+                    <a
+                      href="../template/technology.html"
+                      class="block px-4 py-2 hover:bg-gray-100"
+                      >Tecnología</a
+                    >
+                    <a
+                      href="../template/home.html"
+                      class="block px-4 py-2 hover:bg-gray-100"
+                      >Articulos para el Hogar</a
+                    >
+                    <a
+                      href="../template/toys.html"
+                      class="block px-4 py-2 hover:bg-gray-100"
+                      >Juguetes</a
+                    >
+                    <a
+                      href="../template/personal_care.html"
+                      class="block px-4 py-2 hover:bg-gray-100"
+                      >Cuidado Personal</a
+                    >
+                  </div>
+                </div>
+                <a
+                  href="../about.html"
+                  class="text-gray-700 hover:text-blue-600 font-semibold"
+                  >Sobre Nosotros</a
+                >
+                <a
+                  href="../contact.html"
+                  class="text-gray-700 hover:text-blue-600 font-semibold"
+                  >Contacto</a
+                >
+                <a
+                  href="../store.html"
+                  class="text-gray-700 hover:text-blue-600 font-semibold"
+                  >Tienda</a
+                >
+              </div>
+
+              <div class="flex items-center ml-auto">
+                <button id="cart-toggle" class="relative">
+                  <img
+                    src="../images/596f0d8cb733b17268752d044976f102-shopping-bag-icon.webp"
+                    alt="Carrito"
+                    class="h-7 w-7"
+                  />
+                  <span
+                    id="cart-count"
+                    class="absolute top-0 right-0 text-xs bg-red-500 text-white rounded-full px-1 py-1 text-[0.4rem] hidden"
+                    >0</span
+                  >
+                </button>
+              </div>
+            </div>
+
+            <!-- menu on mobile devices -->
             <button
               id="menu-toggle"
               class="md:hidden text-gray-700 hover:text-blue-600 focus:outline-none"
@@ -34,105 +185,133 @@
               <span class="block w-6 h-0.5 bg-gray-700 mb-1"></span>
               <span class="block w-6 h-0.5 bg-gray-700"></span>
             </button>
-
-            <!-- Menú en desktop -->
-            <div
-              id="menu"
-              class="hidden md:flex md:flex-row md:gap-x-4 absolute md:relative bg-white w-full md:w-auto top-full md:top-0 left-0 shadow-lg md:shadow-none z-50 transition-all duration-300 ease-in-out"
-            >
-              <!-- Menú desplegable de categorías -->
-              <div class="relative group">
-                <button
-                  class="text-gray-700 hover:text-blue-600 font-semibold flex items-center space-x-1"
-                >
-                  <span>Productos</span>
-                  <svg
-                    class="w-4 h-4 transform group-hover:rotate-180 transition-transform duration-200"
-                    xmlns="http://www.w3.org/2000/svg"
-                    viewBox="0 0 20 20"
-                    fill="currentColor"
-                    aria-hidden="true"
-                  >
-                    <path
-                      fill-rule="evenodd"
-                      d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z"
-                      clip-rule="evenodd"
-                    />
-                  </svg>
-                </button>
-                <div
-                  class="absolute left-0 mt-2 w-48 bg-white shadow-lg rounded-md opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 ease-in-out"
-                >
-                  <a
-                    href="./template/new_clothes.html"
-                    class="block px-4 py-2 hover:bg-gray-100"
-                    >Ropa</a
-                  >
-                  <a href="#" class="block px-4 py-2 hover:bg-gray-100"
-                    >Cosmeticos</a
-                  >
-                  <a href="#" class="block px-4 py-2 hover:bg-gray-100"
-                    >Zapatos</a
-                  >
-                  <a href="#" class="block px-4 py-2 hover:bg-gray-100"
-                    >Liberia</a
-                  >
-                  <a href="#" class="block px-4 py-2 hover:bg-gray-100"
-                    >Tecnología</a
-                  >
-                  <a href="#" class="block px-4 py-2 hover:bg-gray-100"
-                    >Articulos para el Hogar</a
-                  >
-                  <a href="#" class="block px-4 py-2 hover:bg-gray-100"
-                    >Juguetes</a
-                  >
-                </div>
-              </div>
-              <!-- Otros enlaces -->
-              <a
-                href="#"
-                class="text-gray-700 hover:text-blue-600 font-semibold"
-                >Sobre Nosotros</a
-              >
-              <a
-                href="#"
-                class="text-gray-700 hover:text-blue-600 font-semibold"
-                >Contacto</a
-              >
-              <a
-                href="#"
-                class="text-gray-700 hover:text-blue-600 font-semibold"
-                >Tienda</a
-              >
-            </div>
           </div>
         </div>
       </nav>
 
-      <!-- Menú desplegable en dispositivos móviles -->
+      <!-- Drop-down menu on mobile devices -->
       <div
         id="mobile-menu"
-        class="md:hidden absolute top-0 left-0 w-full bg-white shadow-md z-50 hidden"
+        class="md:hidden absolute top-0 left-0 w-full bg-white shadow-md z-50 hidden mt-16"
       >
-        <a
-          href="./template/new_clothes.html"
-          class="block px-4 py-2 hover:bg-gray-100"
-          >Ropa</a
+        <ul>
+          <li>
+            <a
+              href="../template/new_clothes.html"
+              class="block px-4 py-2 hover:bg-gray-100"
+              >Ropa</a
+            >
+          </li>
+          <li>
+            <a
+              href="../template/beauty.html"
+              class="block px-4 py-2 hover:bg-gray-100"
+              >Cosmeticos</a
+            >
+          </li>
+          <li>
+            <a
+              href="../template/shoes.html"
+              class="block px-4 py-2 hover:bg-gray-100"
+              >Zapatos</a
+            >
+          </li>
+          <li>
+            <a
+              href="../template/bookshop.html"
+              class="block px-4 py-2 hover:bg-gray-100"
+              >Libreria</a
+            >
+          </li>
+          <li>
+            <a
+              href="../template/technology.html"
+              class="block px-4 py-2 hover:bg-gray-100"
+              >Tecnología</a
+            >
+          </li>
+          <li>
+            <a
+              href="../template/home.html"
+              class="block px-4 py-2 hover:bg-gray-100"
+              >Articulos para el Hogar</a
+            >
+          </li>
+          <li>
+            <a
+              href="../template/personal_care.html"
+              class="block px-4 py-2 hover:bg-gray-100"
+              >Cuidado Personal</a
+            >
+          </li>
+          <li>
+            <a
+              href="../template/toys.html"
+              class="block px-4 py-2 hover:bg-gray-100"
+              >Juguetes</a
+            >
+          </li>
+          <li>
+            <a href="../about.html" class="block px-4 py-2 hover:bg-gray-100"
+              >Sobre Nosotros</a
+            >
+          </li>
+          <li>
+            <a href="../contact.html" class="block px-4 py-2 hover:bg-gray-100"
+              >Contacto</a
+            >
+          </li>
+          <li>
+            <a href="../store.html" class="block px-4 py-2 hover:bg-gray-100"
+              >Tienda</a
+            >
+          </li>
+        </ul>
+      </div>
+
+      <!-- Drop-down cart -->
+      <div
+        id="cart-menu"
+        class="hidden fixed top-16 md:pt-12 left-0 right-0 bg-white shadow-lg z-20 p-4 rounded-tl-lg rounded-tr-lg"
+      >
+        <div class="flex justify-between items-center">
+          <h2 class="text-xl font-semibold">Tu Carrito</h2>
+          <button id="close-cart" class="text-gray-500 hover:text-gray-700">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              class="h-6 w-6"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke="currentColor"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M6 18L18 6M6 6l12 12"
+              />
+            </svg>
+          </button>
+        </div>
+        <div id="cart-items" class="mt-4"></div>
+        <div
+          id="cart-total"
+          class="mt-4 flex justify-between items-center font-semibold text-lg"
         >
-        <a href="#" class="block px-4 py-2 hover:bg-gray-100">Cosmeticos</a>
-        <a href="#" class="block px-4 py-2 hover:bg-gray-100">Zapatos</a>
-        <a href="#" class="block px-4 py-2 hover:bg-gray-100">Liberia</a>
-        <a href="#" class="block px-4 py-2 hover:bg-gray-100">Tecnología</a>
-        <a href="#" class="block px-4 py-2 hover:bg-gray-100"
-          >Articulos para el Hogar</a
-        >
-        <a href="#" class="block px-4 py-2 hover:bg-gray-100">Juguetes</a>
-        <a href="#" class="block px-4 py-2 hover:bg-gray-100">Sobre Nosotros</a>
-        <a href="#" class="block px-4 py-2 hover:bg-gray-100">Contacto</a>
-        <a href="#" class="block px-4 py-2 hover:bg-gray-100">Tienda</a>
+          Total: $0
+        </div>
+        <div class="mt-4 flex justify-between items-center">
+          <button
+            id="send-order"
+            class="bg-blue-500 text-white py-2 px-4 rounded-lg"
+          >
+            Realizar Pedido
+          </button>
+        </div>
       </div>
     </div>
-    <!-- Botón de volver atrás -->
+
+    <!-- Back button -->
     <div class="max-w-6xl mx-auto px-4 mt-6">
       <button
         onclick="history.back()"
@@ -143,12 +322,7 @@
     </div>
 
     <div class="max-w-6xl mx-auto px-4 mt-6">
-      <div
-        id="products-list"
-        class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 xl:grid-cols-4 gap-4 mt-8"
-      >
-        <!-- Aquí van los productos generados dinámicamente -->
-      </div>
+      <div id="products-list"></div>
     </div>
 
     <!-- Footer -->
@@ -157,10 +331,13 @@
         <div>
           <h3 class="text-lg font-bold mb-2">Mapa del Sitio</h3>
           <ul class="space-y-2">
-            <li><a href="#" class="hover:underline">Inicio</a></li>
-            <li><a href="#" class="hover:underline">Productos</a></li>
-            <li><a href="#" class="hover:underline">Sobre Nosotros</a></li>
-            <li><a href="#" class="hover:underline">Contacto</a></li>
+            <li><a href="../index.html" class="hover:underline">Inicio</a></li>
+            <li>
+              <a href="../about.html" class="hover:underline">Sobre Nosotros</a>
+            </li>
+            <li>
+              <a href="../contact.html" class="hover:underline">Contacto</a>
+            </li>
             <li>
               <a href="../terms-and-conditions.html" class="hover:underline"
                 >Terminos y condiciones</a
@@ -171,10 +348,46 @@
         <div>
           <h3 class="text-lg font-bold mb-2">Categorías</h3>
           <ul class="space-y-2">
-            <li><a href="#" class="hover:underline">Ropa</a></li>
-            <li><a href="#" class="hover:underline">Maquillaje</a></li>
-            <li><a href="#" class="hover:underline">Zapatos</a></li>
-            <li><a href="#" class="hover:underline">Cuidado Personal</a></li>
+            <li>
+              <a href="../template/new_clothes.html" class="hover:underline"
+                >Ropa</a
+              >
+            </li>
+            <li>
+              <a href="../template/beauty.html" class="hover:underline"
+                >Cosmeticos</a
+              >
+            </li>
+            <li>
+              <a href="../template/shoes.html" class="hover:underline"
+                >Zapatos</a
+              >
+            </li>
+            <li>
+              <a href="../template/personal_care.html" class="hover:underline"
+                >Cuidado Personal</a
+              >
+            </li>
+            <li>
+              <a href="../template/home.html" class="hover:underline"
+                >Articulos para el Hogar</a
+              >
+            </li>
+            <li>
+              <a href="../template/bookshop.html" class="hover:underline"
+                >Libreria</a
+              >
+            </li>
+            <li>
+              <a href="../template/toys.html" class="hover:underline"
+                >Juguetes</a
+              >
+            </li>
+            <li>
+              <a href="../template/technology" class="hover:underline"
+                >Tecnología</a
+              >
+            </li>
           </ul>
         </div>
         <div>
@@ -189,8 +402,10 @@
     </footer>
 
     <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+    <script src="https://cdn.tailwindcss.com"></script>
     <script src="../js/menu.js"></script>
     <script src="../js/category.js"></script>
+    <script src="../js/cart.js"></script>
     <script>
       document.addEventListener("DOMContentLoaded", function () {
         document.body.classList.remove("opacity-0", "translate-y-10");
