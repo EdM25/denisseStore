@@ -6,7 +6,7 @@
     "price": "25,300.00",
     "image": "../images/clothes/product1.jpg",
     "size": ["S"],
-    "discount": "20%",
+    "discount": "25%",
     "category": "new_clothes",
     "weight": 250
   },

@@ -31,46 +31,24 @@ function renderCart() {
     }
 
     let total = 0;
-    let shippingTotal = 0;
-
-    // Verificar los datos del carrito
-    console.log(cart); // Esto nos ayudará a ver qué productos tenemos en el carrito
 
     cart.forEach((product, index) => {
-        // Asegurándonos de que los precios y el envío son valores numéricos
-        const productPrice = (product.discountedPrice && !isNaN(product.discountedPrice)) 
-            ? product.discountedPrice 
-            : (product.originalPrice && !isNaN(product.originalPrice) 
-                ? product.originalPrice 
-                : 0);
-
-        const shippingCost = (product.shippingCost && !isNaN(product.shippingCost)) 
-            ? product.shippingCost 
-            : 0;
-
-        // Verificar que los valores son correctos
-        console.log(`Producto: ${product.name}, Precio: ${productPrice}, Envío: ${shippingCost}`);
-
-        total += productPrice; // Acumula el precio de cada producto
-        shippingTotal += shippingCost; // Acumula el costo de envío
+        total += product.price; // Acumula el precio de cada producto
 
         const cartItem = document.createElement("div");
         cartItem.innerHTML = `
             <div class="cart-item flex justify-between items-center border-b py-2">
                 <img src="${product.image}" alt="${product.name}" width="50" class="rounded-md">
-                <p class="text-sm flex-1 ml-2">${product.name} - ${product.size} - ₡${productPrice.toLocaleString()}</p>
+                <p class="text-sm flex-1 ml-2">${product.name} - ${product.size} - $${product.price}</p>
                 <button onclick="removeFromCart(${index})" class="text-red-500 text-sm">Eliminar</button>
             </div>
         `;
         cartContainer.appendChild(cartItem);
     });
 
-    // Mostrar el costo de envío y el total del carrito
+    // Mostrar el total del carrito
     const totalContainer = document.getElementById("cart-total");
-    totalContainer.innerHTML = `
-        <p>Envío: ₡${shippingTotal.toLocaleString()}</p>
-        <p>Total: ₡${(total + shippingTotal).toLocaleString()}</p>
-    `;
+    totalContainer.innerHTML = `Total: $${total}`;
 }
 
 // Eliminar producto del carrito
@@ -100,31 +78,18 @@ function sendOrder() {
     let message = "Hola, quiero hacer un pedido:\n\n";
 
     let total = 0;
-    let shippingTotal = 0;
 
     cart.forEach(product => {
-        // Verificar que el precio y el costo de envío estén correctos
-        const productPrice = (product.discountedPrice && !isNaN(product.discountedPrice)) 
-            ? product.discountedPrice 
-            : (product.originalPrice && !isNaN(product.originalPrice) 
-                ? product.originalPrice 
-                : 0);
-
-        const shippingCost = (product.shippingCost && !isNaN(product.shippingCost)) 
-            ? product.shippingCost 
-            : 0;
-
-        message += `- ${product.name} (${product.size}) - ₡${productPrice.toLocaleString()} + Envío: ₡${shippingCost.toLocaleString()}\n`;
-        total += productPrice;
-        shippingTotal += shippingCost;
+        message += `- ${product.name} (${product.size}) - $${product.price}\n`;
+        total += product.price; // Sumar el precio del producto al total
     });
 
-    message += `\nEnvío: ₡${shippingTotal.toLocaleString()}\nTotal: ₡${(total + shippingTotal).toLocaleString()}\n\n¿Está disponible?`;
+    message += `\nTotal: $${total}\n\n¿Está disponible?`;
     const whatsappUrl = `https://wa.me/${whatsappNumber}?text=${encodeURIComponent(message)}`;
     window.open(whatsappUrl, "_blank");
 
     // Limpiar el carrito después de enviar el pedido
-    clearCart();
+    clearCart(); 
 }
 
 // Evento para el botón de enviar pedido

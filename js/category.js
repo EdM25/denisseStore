@@ -18,13 +18,13 @@ document.addEventListener("DOMContentLoaded", async () => {
         const productsList = document.getElementById("products-list");
         productsList.innerHTML = ""; // Limpia antes de agregar
 
-        productsList.classList.add("grid", "grid-cols-2", "gap-4");
+        productsList.classList.add("grid", "md:grid-cols-3", "grid-cols-2", "xl:grid-cols-4", "gap-4");
 
         products.forEach(product => {
             const productCard = document.createElement("div");
             productCard.classList.add(
                 "bg-white", "border", "border-gray-200", "rounded-xl", "shadow-lg",
-                "p-5", "flex", "flex-col", "items-center", "hover:shadow-2xl",
+                "p-5", "flex", "flex-col", "items-center", "hover:shadow-2xl", "flex-grow",
                 "transition-shadow", "transform", "hover:scale-105", "duration-300", "relative"
             );
 
@@ -49,8 +49,8 @@ document.addEventListener("DOMContentLoaded", async () => {
             const formattedDiscountedPrice = formatPrice(discountedPrice);
 
             // Limitar la descripción a 80 caracteres
-            const description = product.description.length > 30
-                ? product.description.substring(0, 30) + "..."
+            const description = product.description.length > 28
+                ? product.description.substring(0, 28) + "..."
                 : product.description;
 
             // Crear la etiqueta de descuento si aplica
@@ -65,17 +65,17 @@ document.addEventListener("DOMContentLoaded", async () => {
                 <div class="w-full overflow-hidden rounded-xl">
                     <img src="${product.image}" alt="${product.name}" class="w-full sm:h-48 md:h-60 object-cover">
                 </div>
-                <h2 class="text-lg font-semibold mt-3 text-center text-gray-800">${product.name}</h2>
-                <p class="text-sm text-gray-600 mt-2 text-center">${description}</p>
-                <div class="mt-3 text-center">
+                <h2 class="text-sm sm:text-lg font-semibold mt-3 text-center text-gray-800">${product.name}</h2>
+                <p class="text-sx sm:text-sm text-gray-600 mt-2 text-center hidden sm:block">${description}</p>
+                <div class="mt-auto text-center">
                     ${hasDiscount
                         ? `<p class="text-gray-500 line-through text-sm">₡${formattedOriginalPrice}</p>
                            <p class="text-xl font-bold text-green-600">₡${formattedDiscountedPrice}</p>`
                         : `<p class="text-xl font-bold text-green-600">₡${formattedOriginalPrice}</p>`}
                 </div>
                 <a href="product.html?id=${product.id}&category=${currentPage}" 
-                class="bg-gradient-to-r from-indigo-500 to-purple-600 text-white px-5 py-2 rounded-lg mt-4 w-full text-center 
-                hover:from-indigo-600 hover:to-purple-700 uppercase transition-all duration-300 transform hover:scale-105 text-sm sm:text-base">
+                class="bg-gradient-to-r from-indigo-500 to-purple-600 text-white px-5 py-2 rounded-lg mt-auto w-full text-center 
+                hover:from-indigo-600 hover:to-purple-700 uppercase transition-all duration-300 transform hover:scale-105 text-xs sm:text-base">
                     Ver Producto
                 </a>
             `;
